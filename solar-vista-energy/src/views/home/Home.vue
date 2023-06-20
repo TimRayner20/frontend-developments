@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Highlight from "./components/Highlight.vue";
 import HomeHero from "./components/HomeHero.vue";
-
+import AboutSection from "./components/AboutSection.vue";
 const companyHighlights: Array<any> = [
   {
     title: "96GW solar modules shipments",
@@ -49,21 +49,8 @@ const companyHighlights: Array<any> = [
       :icon="highlight.icon"
       class=""
     />
-    <div
-      class="item flex container m-auto text-center border p-5 py-16 my-5 rounded-xl w-3/4 md:w-11/12 bg-[#34495e] hover:cursor-pointer"
-    >
-      <div class="align-middle m-auto w-full">
-        <font-awesome-icon
-          class="fa text-6xl my-1 text-[#fff]"
-          icon="fa-standard fa-angles-right"
-        />
-
-        <a class="block my-5 mx-auto underline text-white" href="/about"
-          >Read More</a
-        >
-      </div>
-    </div>
   </div>
 
   <!-- About -->
+  <AboutSection />
 </template>

@@ -10,10 +10,10 @@
       class="bg-gradient absolute top-[-5px] right-0 md:top-[-40px] md:right-[-410px] w-[95%] -z-10"
     />
     <div
-      class="container hero-content align-middle md:align-top md:mt-32 md:m-[44px auto] flex flex-col md:flex-row w-full m-auto md:align-middle"
+      class="container flex hero-content align-middle md:align-top md:mt-32 md:m-[44px auto] flex flex-col md:flex-row w-full m-auto md:align-middle"
     >
       <div
-        class="flex flex-col md:justify-start md:mr-10 mt-28 mb-16 md:w-6/12"
+        class="md:justify-start align-middlemd:mr-10 mt-28 md:mt-0 mb-16 md:mb-0 md:w-6/12 h-full flex flex-col justify-center m-auto"
       >
         <h1 class="text-5xl text-black">Solar Vista Energy</h1>
         <p class="text-black text-xl mt-3">Making A Solar Difference ☀️</p>
@@ -23,11 +23,11 @@
           Get Started
         </button>
       </div>
-      <div class="flex flex-col md:w-6/12 m-auto md:m-0">
+      <div class="flex flex-col md:w-6/12 md:m-0">
         <img
           src="@/assets/images/building-1.png"
           alt="hero-image"
-          class="w-[400px] md:w-[500px] rounded-xl mb-5 ml-auto"
+          class="w-[400px] md:w-[500px] rounded-xl m-auto"
         />
       </div>
     </div>
