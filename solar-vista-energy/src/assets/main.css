@@ -3,10 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-#app {
+body {
   max-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
+
 
 h1,
 h2,
@@ -14,6 +15,7 @@ h3,
 h4,
 p {
   transition: all 0.2s ease-in-out;
+  line-height: 2.5rem !important; /* 24px */
 }
 
 a,

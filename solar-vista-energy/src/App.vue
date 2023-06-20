@@ -4,7 +4,7 @@ import Navbar from "@/components/navigation/Navbar.vue";
 
 <template>
   <navbar />
-  <div class="content min-h-screen relative">
+  <div class="relative">
     <router-view />
   </div>
 </template>
