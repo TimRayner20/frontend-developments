@@ -19,14 +19,10 @@ const updateScroll = () => {
 <template>
   <nav
     class="transition-all ease-in-out navbar sticky top-0 z-50 h-20 left-auto"
-    :class="{ change_color: scrollPosition.valueOf() > 1200 }"
+    :class="{ change_color: scrollPosition.valueOf() > 500 }"
   >
     <div class="container m-auto flex flex-row p-5 md:pl-0 pr-0">
-      <img
-        src="@/assets/images/logo_raw.png"
-        alt="logo"
-        class="h-12 rounded-full"
-      />
+      [LOGO]
       <ul class="navigation ml-auto hidden md:block">
         <router-link class="navbar-link m-3 p-5 align-middle" to="/"
           >Home</router-link
@@ -49,7 +45,13 @@ const updateScroll = () => {
 <style scoped>
 .change_color {
   transition: 0.3s ease-in-out all;
-  background-color: rgba(65, 184, 131, 0.85);
+  background-color: rgba(65, 184, 131, 0.99);
   color: #fff;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
 }
 </style>

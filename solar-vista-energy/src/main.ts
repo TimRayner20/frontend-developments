@@ -11,9 +11,27 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
-import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAnglesRight,
+  faBarsStaggered,
+  faBatteryFull,
+  faEarthAmericas,
+  faIndustry,
+  faLeaf,
+  faSolarPanel,
+  faSun,
+} from "@fortawesome/free-solid-svg-icons";
 /* add icons to the library */
-library.add(faBarsStaggered);
+library.add(
+  faBarsStaggered,
+  faSolarPanel,
+  faSun,
+  faEarthAmericas,
+  faIndustry,
+  faBatteryFull,
+  faLeaf,
+  faAnglesRight
+);
 
 const app = createApp(App)
   .use(router)
