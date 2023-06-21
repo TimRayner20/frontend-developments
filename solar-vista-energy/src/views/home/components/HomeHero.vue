@@ -19,11 +19,25 @@
           Solar Vista Energy
         </h1>
         <p class="text-black text-xl mt-3">Making A Solar Difference ☀️</p>
-        <button
-          class="btn bg-[#41B883] text-white rounded-md p-3 mt-6 w-2/3 m-auto md:ml-0"
-        >
-          Get Started
-        </button>
+        <div class="buttons w-full md:w-2/3 m-auto md:m-0">
+          <button
+            class="btn bg-[#41B883] text-white rounded-md p-3 mt-6 w-full m-auto md:ml-0"
+          >
+            Learn more
+          </button>
+          <div class="flex flex-row m-auto w-full">
+            <button
+              class="btn bg-[#41B883] text-white rounded-md p-3 mt-6 w-1/2 mr-5 m-auto md:ml-0"
+            >
+              Call
+            </button>
+            <button
+              class="btn bg-[#41B883] text-white rounded-md p-3 mt-6 w-1/2 ml-5 m-auto md:ml-0"
+            >
+              Email
+            </button>
+          </div>
+        </div>
       </div>
       <div class="flex flex-col md:w-6/12">
         <img

@@ -32,14 +32,17 @@ const companyHighlights: Array<any> = [
 
 <template>
   <HomeHero />
-  <div class="container mx-12 md:m-auto mt-5" id="introduction">
+  <div
+    class="container m-auto my-16 mb-5 md:my-32 text-center"
+    id="introduction"
+  >
     <h3 class="text-4xl md:text-6xl my-5 px-2 font-bold">Providing The Best</h3>
     <h4 class="text-xl px-2">Market leading Solar Solutions Since 1999</h4>
   </div>
 
   <!--HIGHLIGHTS-->
   <div
-    class="container m-auto my-16 grid grid-cols-1 md:grid-cols-3 md:flex-row md:flex-wrap"
+    class="container m-auto my-16 mt-5 grid grid-cols-1 md:grid-cols-3 md:flex-row md:flex-wrap"
     id="highlights"
   >
     <Highlight
