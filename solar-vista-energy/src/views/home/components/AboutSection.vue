@@ -6,11 +6,11 @@
     class="about-section relative my-5 bg-[#34495e] md:mx-auto text-left md:text-left py-24"
   >
     <div
-      class="container flex flex-col md:flex-row text-white py-5 mx-5 md:m-auto"
+      class="container flex flex-col md:flex-row text-white py-5 px-5 md:m-auto"
     >
       <div class="text-wrapper flex flex-col w-full md:w-1/2">
-        <h3 class="text-6xl my-5 font-bold">About Solar Vista</h3>
-        <p class="text-xl mt-5 my-5">
+        <h3 class="text-5xl md:text-6x font-bold">About Solar Vista</h3>
+        <p class="text-xl mt-6 my-5">
           Hi 👋 , we're Solar Vista! We're on a mission to help like minded
           businesses reach net zero before 2050 by offering bespoke solar
           solutions. We're a team of passionate individuals who are committed to
