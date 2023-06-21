@@ -23,11 +23,11 @@
           Get Started
         </button>
       </div>
-      <div class="flex flex-col md:w-6/12 md:m-0">
+      <div class="flex flex-col md:w-6/12">
         <img
           src="@/assets/images/building-1.png"
           alt="hero-image"
-          class="w-[400px] md:w-[500px] rounded-xl m-auto"
+          class="w-[400px] md:w-[500px] rounded-xl m-auto md:m-0 md:ml-auto"
         />
       </div>
     </div>
