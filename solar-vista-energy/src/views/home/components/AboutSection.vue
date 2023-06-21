@@ -3,7 +3,7 @@
 <template>
   <div
     id="about-us"
-    class="about-section relative my-5 bg-[#34495e] md:mx-auto text-left md:text-left py-24"
+    class="about-section relative my-5 bg-[#34495e] md:mx-auto text-left md:text-left py-24 mb-0"
   >
     <div
       class="container flex flex-col md:flex-row text-white py-5 px-5 md:m-auto"
