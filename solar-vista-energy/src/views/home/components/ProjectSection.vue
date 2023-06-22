@@ -29,17 +29,139 @@ const projects: Array<any> = [
 ];
 
 // https://www.youtube.com/watch?v=3Z780EOzIQs
-</script>
-<template>
-  <div class="container m-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-16">
-      <ProjectPreview
+/**
+ *       <ProjectPreview
         v-for="project in projects"
         :key="project.title"
         :title="project.title"
         :image="project.image"
         :description="project.description"
       />
+ */
+</script>
+<template>
+  <div class="projects py-16 h-full place-items-center relative">
+    <div class="slider m-auto w-[90%] place-items-center">
+      <div class="slide-track flex">
+        <!-- 9 SLIDES -->
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+
+        <!-- SAME 9 SLIDES (DOUBLED) -->
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/200/300" alt="" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
+<style scoped lang="scss">
+.slide-track {
+  display: flex;
+  /** slide track width = total number of slides (9x2=18) x individual slide width (250px) */
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.slide {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+img {
+  width: 100%;
+  transition: transform 0.5s;
+  &:hover {
+    transform: translateZ(20px); /** Maybe dont transform here? */
+  }
+}
+
+/** GRADIENT SHADOWS  */
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+</style>
