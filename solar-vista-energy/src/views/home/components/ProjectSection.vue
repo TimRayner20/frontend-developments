@@ -40,64 +40,82 @@ const projects: Array<any> = [
  */
 </script>
 <template>
-  <div class="projects py-16 h-full place-items-center relative">
-    <div class="slider m-auto w-[90%] place-items-center">
-      <div class="slide-track flex">
+  <div class="projects border">
+    <div class="slider">
+      <div class="slide-track">
         <!-- 9 SLIDES -->
         <div class="slide">
+          1
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          2
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          3
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          4
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          5
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          6
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          7
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          8
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          9
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
 
         <!-- SAME 9 SLIDES (DOUBLED) -->
         <div class="slide">
+          1
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          2
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          3
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          4
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          5
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          6
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          7
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          8
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
         <div class="slide">
+          9
           <img src="https://picsum.photos/200/300" alt="" />
         </div>
       </div>
@@ -105,6 +123,21 @@ const projects: Array<any> = [
   </div>
 </template>
 <style scoped lang="scss">
+.projects {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.slider {
+  height: 250px; /** think this makes it un-responsive */
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+
 .slide-track {
   display: flex;
   /** slide track width = total number of slides (9x2=18) x individual slide width (250px) */
@@ -125,6 +158,7 @@ const projects: Array<any> = [
 }
 
 .slide {
+  height: 200px;
   width: 250px;
   display: flex;
   align-items: center;
