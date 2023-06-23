@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { reactive } from "vue";
 import ButtonSpinner from "@/components/animation/ButtonSpinner.vue";
-
+import { isValidEmail } from "@/helpers/email-helpers";
 const data = reactive({
   form: {
     name: "",
@@ -18,25 +18,43 @@ const validateForm = () => {
   if (
     data.form.name.length &&
     data.form.company.length &&
-    data.form.email.length &&
+    //check if email is valid format
+    isValidEmail(data.form.email) &&
     data.form.message.length
   ) {
     return true;
   } else {
+    if (!isValidEmail(data.form.email)) {
+      data.form.email = "";
+    }
     return false;
   }
 };
 
 const submitForm = (e: event) => {
   e.preventDefault();
+  data.submission = true;
+
   data.loading = true;
+
+  if (validateForm()) {
+    setTimeout(() => {
+      data.form.submitted = true;
+      console.warn(
+        "sorry guys, this form doesn't actually submit anywhere. this is just a demo."
+      );
+      data.loading = false;
+    }, 1000);
+  } else {
+    data.loading = false;
+  }
 };
 </script>
 
 <template>
   <div class="contact-section container m-auto my-20">
     <h3 class="text-4xl text-center md:text-left md:text-6xl my-5 font-bold">
-      Contact Us
+      Contact
     </h3>
     <p class="text-lg mt-6 my-5 text-center md:text-left">
       Want to get in touch? We'd love to hear from you! You can reach us by
@@ -51,7 +69,9 @@ const submitForm = (e: event) => {
             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             for="grid-first-name"
           >
-            Name*
+            Name<span :class="{ 'text-red-500': !data.form.name.length }">
+              &nbsp;*</span
+            >
           </label>
           <input
             class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
@@ -59,7 +79,6 @@ const submitForm = (e: event) => {
             type="text"
             placeholder="Jane"
             v-model="data.form.name"
-            @input="(event) => (data.form.name = event.target.value)"
             :class="{
               'border-red-500': !data.form.name.length && data.submission,
             }"
@@ -75,15 +94,18 @@ const submitForm = (e: event) => {
         <div class="w-full md:w-1/2 mb-6 px-3">
           <label
             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-last-name"
+            for="grid-company-name"
           >
-            Company
+            Company<span :class="{ 'text-red-500': !data.form.company.length }">
+              &nbsp;*</span
+            >
           </label>
           <input
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-last-name"
+            id="grid-company-name"
             type="text"
             placeholder="Doe"
+            v-model="data.form.company"
             :class="{
               'border-red-500': !data.form.company.length && data.submission,
             }"
@@ -99,15 +121,23 @@ const submitForm = (e: event) => {
         <div class="w-full md:w-1/2 mb-6 px-3">
           <label
             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-last-name"
+            for="grid-email"
           >
-            Email
+            Email<span
+              :class="{
+                'text-red-500':
+                  !data.form.email.length || !isValidEmail(data.form.email),
+              }"
+            >
+              &nbsp;*</span
+            >
           </label>
           <input
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-last-name"
-            type="text"
-            placeholder="Doe"
+            id="grid-email"
+            type="email"
+            placeholder="example@solarvista.com"
+            v-model="data.form.email"
             :class="{
               'border-red-500': !data.form.email.length && data.submission,
             }"
@@ -116,26 +146,29 @@ const submitForm = (e: event) => {
             v-if="!data.form.email.length && data.submission"
             class="text-red-500 text-xs italic"
           >
-            Please fill out this field.
+            Please enter a valid email.
           </p>
         </div>
 
         <div class="w-full md:w-1/2 px-3 mb-6">
           <label
             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-last-name"
+            for="grid-message"
           >
-            Message
+            Message<span :class="{ 'text-red-500': !data.form.message.length }">
+              &nbsp;*</span
+            >
           </label>
           <textarea
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-last-name"
+            id="grid-message"
             type="text"
             placeholder="Type message here..."
             rows="5"
             :class="{
               'border-red-500': !data.form.message.length && data.submission,
             }"
+            v-model="data.form.message"
           />
           <p
             v-if="!data.form.message.length && data.submission"
@@ -152,11 +185,12 @@ const submitForm = (e: event) => {
           >
             <span v-if="!data.form.submitted && !data.loading">Send</span>
             <span v-else-if="data.form.submitted"> Sent</span>
-            <ButtonSpinner v-if="data.loading" />
+            <ButtonSpinner v-else-if="data.loading" />
           </button>
 
           <p v-if="data.form.submitted" class="text-xs italic">
-            Thanks for contacting Solar Vista. We'll be in contact 🌞
+            Thank you {{ data.form.name }} for contacting Solar Vista. We'll be
+            in contact 🌞
           </p>
         </div>
       </div>
