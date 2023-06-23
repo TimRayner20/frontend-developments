@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Highlight from "./components/Highlight.vue";
 import HomeHero from "./components/HomeHero.vue";
-import AboutSection from "./components/AboutSection.vue";
-import ProjectSection from "./components/ProjectSection.vue";
+import AboutSection from "./sections/AboutSection.vue";
+import ProjectSection from "./sections/ProjectSection.vue";
 import CompanyBadge from "./components/CompanyBadge.vue";
 const companyHighlights: Array<any> = [
   {
@@ -59,7 +59,8 @@ const companyBadges: Array<any> = [
   },
   {
     company: "WWF",
-    image: "https://assets.stickpng.com/images/58568d4c4f6ae202fedf2721.png",
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/800px-WWF_logo.svg.pnghttps://logos-world.net/wp-content/uploads/2020/11/World-Wide-Fund-for-Nature-WWF-Emblem.png",
     link: "https://www.wwf.org.uk/",
   },
 ];
