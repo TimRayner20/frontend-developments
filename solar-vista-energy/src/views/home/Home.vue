@@ -2,7 +2,9 @@
 import Highlight from "./components/Highlight.vue";
 import HomeHero from "./components/HomeHero.vue";
 import AboutSection from "./sections/AboutSection.vue";
+import ContactSection from "./sections/ContactSection.vue";
 import ProjectSection from "./sections/ProjectSection.vue";
+import UnknownToolSection from "./sections/UnknownToolSection.vue";
 import CompanyBadge from "./components/CompanyBadge.vue";
 const companyHighlights: Array<any> = [
   {
@@ -77,7 +79,7 @@ const companyBadges: Array<any> = [
     id="introduction"
   >
     <h3 class="text-4xl md:text-6xl my-5 md:px-2 font-bold">
-      Providing The Best
+      Powering A Brighter Future
     </h3>
     <h4 class="text-xl md:px-2">Market leading Solar Solutions Since 1999</h4>
   </div>
@@ -101,14 +103,16 @@ const companyBadges: Array<any> = [
   <!-- Projects -->
   <ProjectSection />
   <!-- Partners-->
-  <div class="container m-auto my-8 mt-16 text-center" id="partners">
-    <h3 class="text-4xl md:text-6xl my-5 md:px-2 font-bold">Partners</h3>
+  <div class="container m-auto my-8 mt-16 text-center md:mt-0" id="partners">
     <h4 class="text-lg md:text-2xl px-2">
       Just a few notable names we've worked with, to help the world be a better
       place, and give our next generaton a brighter future.
     </h4>
   </div>
-  <div id="partner-badges" class="container grid grid-cols-3 m-auto w-full">
+  <div
+    id="partner-badges"
+    class="container grid grid-cols-3 m-auto w-full mb-20"
+  >
     <CompanyBadge
       v-for="(badge, index) in companyBadges"
       :key="index"
@@ -117,4 +121,10 @@ const companyBadges: Array<any> = [
       :link="badge.link"
     />
   </div>
+
+  <!-- UNKNOWN TOOL SECTION -->
+  <UnknownToolSection />
+
+  <!-- CONACT SECTION-->
+  <ContactSection />
 </template>

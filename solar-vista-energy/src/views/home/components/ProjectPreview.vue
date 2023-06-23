@@ -20,7 +20,11 @@ const props = defineProps({
     class="preview-wrapper flex flex-col ml-5 rounded-lg hover:bg-[#34495e] hover:cursor-pointer transition-all duration-300 ease-in-out animated-box in"
   >
     <div class="preview-image w-full">
-      <img :src="props.image" :alt="props.title" class="h-[300px] w-full" />
+      <img
+        :src="props.image"
+        :alt="props.title"
+        class="h-[300px] md:h-[350px] w-full"
+      />
     </div>
     <div class="preview-content text-center md:text-start md:px-5">
       <h3 class="text-xl font-bold my-2">{{ props.title }}</h3>
@@ -29,7 +33,7 @@ const props = defineProps({
       </p>
       <a
         href="/about"
-        class="btn block bg-[#41B883] text-white rounded-md p-3 w-2/3 mb-6 m-auto md:m-0 md:my-6 md:w-4/12 text-center mt-5"
+        class="btn block bg-[#41B883] text-white rounded-md p-3 w-2/3 mb-6 m-auto md:m-0 md:my-6 md:w-5/12 text-center mt-5"
       >
         Read more
       </a>
@@ -60,12 +64,12 @@ const props = defineProps({
   background-size: 300% 300%;
   clip-path: polygon(
     0% 100%,
-    3px 100%,
-    3px 3px,
-    calc(100% - 3px) 3px,
-    calc(100% - 3px) calc(100% - 3px),
-    3px calc(100% - 3px),
-    3px 100%,
+    5px 100%,
+    5px 5px,
+    calc(100% - 5px) 5px,
+    calc(100% - 5px) calc(100% - 5px),
+    5px calc(100% - 5px),
+    5px 100%,
     100% 100%,
     100% 0%,
     0% 0%
@@ -94,12 +98,12 @@ const props = defineProps({
   0% {
     clip-path: polygon(
       0% 100%,
-      3px 100%,
-      3px 3px,
-      calc(100% - 3px) 3px,
-      calc(100% - 3px) calc(100% - 3px),
-      3px calc(100% - 3px),
-      3px 100%,
+      5px 100%,
+      5px 5px,
+      calc(100% - 5px) 5px,
+      calc(100% - 5px) calc(100% - 5px),
+      5px calc(100% - 5px),
+      5px 100%,
       100% 100%,
       100% 0%,
       0% 0%
@@ -108,12 +112,12 @@ const props = defineProps({
   25% {
     clip-path: polygon(
       0% 100%,
-      3px 100%,
-      3px 3px,
-      calc(100% - 3px) 3px,
-      calc(100% - 3px) calc(100% - 3px),
-      calc(100% - 3px) calc(100% - 3px),
-      calc(100% - 3px) 100%,
+      5px 100%,
+      5px 5px,
+      calc(100% - 5px) 5px,
+      calc(100% - 5px) calc(100% - 5px),
+      calc(100% - 5px) calc(100% - 5px),
+      calc(100% - 5px) 100%,
       100% 100%,
       100% 0%,
       0% 0%
@@ -122,13 +126,13 @@ const props = defineProps({
   50% {
     clip-path: polygon(
       0% 100%,
-      3px 100%,
-      3px 3px,
-      calc(100% - 3px) 3px,
-      calc(100% - 3px) 3px,
-      calc(100% - 3px) 3px,
-      calc(100% - 3px) 3px,
-      calc(100% - 3px) 3px,
+      5px 100%,
+      5px 5px,
+      calc(100% - 5px) 5px,
+      calc(100% - 5px) 5px,
+      calc(100% - 5px) 5px,
+      calc(100% - 5px) 5px,
+      calc(100% - 5px) 5px,
       100% 0%,
       0% 0%
     );
@@ -136,28 +140,28 @@ const props = defineProps({
   75% {
     -webkit-clip-path: polygon(
       0% 100%,
-      3px 100%,
-      3px 3px,
-      3px 3px,
-      3px 3px,
-      3px 3px,
-      3px 3px,
-      3px 3px,
-      3px 0%,
+      5px 100%,
+      5px 5px,
+      5px 5px,
+      5px 5px,
+      5px 5px,
+      5px 5px,
+      5px 5px,
+      5px 0%,
       0% 0%
     );
   }
   100% {
     -webkit-clip-path: polygon(
       0% 100%,
-      3px 100%,
-      3px 100%,
-      3px 100%,
-      3px 100%,
-      3px 100%,
-      3px 100%,
-      3px 100%,
-      3px 100%,
+      5px 100%,
+      5px 100%,
+      5px 100%,
+      5px 100%,
+      5px 100%,
+      5px 100%,
+      5px 100%,
+      5px 100%,
       0% 100%
     );
   }

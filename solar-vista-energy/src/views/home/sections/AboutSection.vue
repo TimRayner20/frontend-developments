@@ -11,7 +11,11 @@
       <div
         class="text-center md:text-left text-wrapper flex flex-col w-full md:w-1/2 pr-5"
       >
-        <h3 class="text-4xl md:text-6x font-bold">About Solar Vista</h3>
+        <h3
+          class="text-4xl text-center md:text-left md:text-6xl my-5 md:px-2 font-bold"
+        >
+          About Solar Vista
+        </h3>
         <p class="text-lg mt-6 my-5">
           Hi 👋, we're Solar Vista! We're on a mission to help like minded
           businesses reach net zero before 2050 by offering bespoke solar
