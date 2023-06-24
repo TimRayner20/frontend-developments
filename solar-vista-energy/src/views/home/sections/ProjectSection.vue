@@ -87,7 +87,10 @@ const projects: Array<any> = [
   /** slide track width = total number of slides (9x2=18) x individual slide width (250px) */
   width: calc(85vw * 8);
   animation: scroll 20s linear infinite;
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
+    width: calc(60vw * 8);
+  }
+  @media (min-width: 1280px) {
     width: calc(25vw * 8);
   }
   &:hover {
@@ -104,7 +107,20 @@ const projects: Array<any> = [
   }
 }
 
-@media (min-width: 640px) {
+//md
+@media (min-width: 768px) {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-60vw * 4));
+    }
+  }
+}
+
+//lg
+@media (min-width: 1280px) {
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -121,7 +137,10 @@ const projects: Array<any> = [
   align-items: center;
 
   perspective: 100px;
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
+    width: 60vw;
+  }
+  @media (min-width: 1280px) {
     width: 25vw;
   }
 }
@@ -139,8 +158,11 @@ const projects: Array<any> = [
   position: absolute;
   width: 15%;
   z-index: 2;
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     width: 5%;
+  }
+  @media (min-width: 1280px) {
+    width: 10%;
   }
 }
 

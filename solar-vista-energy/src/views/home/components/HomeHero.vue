@@ -6,8 +6,19 @@
   >
     <!-- TODO: Change image for mobile-->
     <img
+      id="bg-gradient-mobile"
+      src="@/assets/images/bg-gradient-mobile.svg"
+      class="bg-gradient absolute top-[-5px] left:0 w-full -z-10"
+    />
+    <img
+      id="bg-gradient-tablet"
+      src="@/assets/images/bg-gradient-tablet.svg"
+      class="bg-gradient absolute top-[-10vh] right-0 -z-10"
+    />
+    <img
+      id="bg-gradient-lg"
       src="@/assets/images/bg-gradient.svg"
-      class="bg-gradient absolute top-[-5px] right-0 md:top-[-40px] md:right-[-410px] w-[95%] -z-10"
+      class="bg-gradient absolute top-[-40px] right-[-410px] w-[95%] -z-10"
     />
     <div
       class="container flex hero-content align-middle md:align-top md:mt-32 md:m-[44px auto] flex flex-col md:flex-row w-full m-auto md:align-middle"
@@ -49,3 +60,35 @@
     </div>
   </div>
 </template>
+<style>
+/** Mobile First Media Queries */
+
+#bg-gradient-mobile {
+  display: block;
+}
+#bg-gradient-tablet {
+  display: none;
+}
+#bg-gradient-lg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #bg-gradient-mobile {
+    display: none;
+  }
+  #bg-gradient-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  #bg-gradient-tablet {
+    display: none;
+  }
+
+  #bg-gradient-lg {
+    display: block;
+  }
+}
+</style>

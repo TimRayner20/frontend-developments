@@ -3,16 +3,16 @@
 <template>
   <div
     id="about-us"
-    class="about-section relative my-5 bg-[#34495e] md:mx-auto text-left md:text-left py-8 md:py-16 mb-0"
+    class="about-section relative my-5 bg-[#34495e] lg:mx-auto text-left lg:text-left py-8 lg:py-16 mb-0"
   >
     <div
-      class="container flex flex-col md:flex-row text-white py-5 px-5 m-auto"
+      class="container flex flex-col lg:flex-row text-white py-5 px-5 m-auto"
     >
       <div
-        class="text-center md:text-left text-wrapper flex flex-col w-full md:w-1/2 pr-5"
+        class="text-center lg:text-left text-wrapper flex flex-col w-full lg:w-1/2 pr-5"
       >
         <h3
-          class="text-4xl text-center md:text-left md:text-6xl my-5 md:px-2 font-bold"
+          class="text-4xl text-center lg:text-left lg:text-6xl my-5 lg:px-2 font-bold"
         >
           About Solar Vista
         </h3>
@@ -24,16 +24,16 @@
         </p>
         <a
           href="/about"
-          class="btn block bg-[#41B883] text-white rounded-md p-3 w-2/3 mb-6 m-auto md:m-0 md:w-4/12 text-center"
+          class="btn block bg-[#41B883] text-white rounded-lg p-3 w-2/3 mb-6 m-auto lg:m-0 lg:w-4/12 text-center"
         >
           Read more
         </a>
       </div>
-      <div class="img-wrapper md:m-0 md:ml-auto">
+      <div class="img-wrapper lg:m-0 lg:ml-auto">
         <img
           src="../../../assets/images/night-neighborhood.png"
           alt="Solar Solutions"
-          class="rounded-xl w-full md:ml-auto"
+          class="rounded-xl w-full lg:ml-auto"
         />
       </div>
     </div>
