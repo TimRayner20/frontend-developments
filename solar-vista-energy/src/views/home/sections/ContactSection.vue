@@ -62,138 +62,151 @@ const submitForm = (e: event) => {
       <a href="mailto:tim.rayner2020@gmail.com">contact@solarvista.com</a>
     </p>
 
-    <form class="container w-3/4 m-auto max-w-lg">
-      <div class="flex flex-wrap -mx-3 mb-6">
-        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-first-name"
-          >
-            Name<span :class="{ 'text-red-500': !data.form.name.length }">
-              &nbsp;*</span
+    <div class="flex flex-row">
+      <form id="home-contact-form" class="container w-3/4 m-auto max-w-lg">
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label
+              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              for="grid-first-name"
             >
-          </label>
-          <input
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
-            id="grid-first-name"
-            type="text"
-            placeholder="Jane"
-            v-model="data.form.name"
-            :class="{
-              'border-red-500': !data.form.name.length && data.submission,
-            }"
-          />
-          <p
-            v-if="!data.form.name.length && data.submission"
-            class="text-red-500 text-xs italic"
-          >
-            Please fill out this field.
-          </p>
-        </div>
-
-        <div class="w-full md:w-1/2 mb-6 px-3">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-company-name"
-          >
-            Company<span :class="{ 'text-red-500': !data.form.company.length }">
-              &nbsp;*</span
-            >
-          </label>
-          <input
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-company-name"
-            type="text"
-            placeholder="Doe"
-            v-model="data.form.company"
-            :class="{
-              'border-red-500': !data.form.company.length && data.submission,
-            }"
-          />
-          <p
-            v-if="!data.form.company.length && data.submission"
-            class="text-red-500 text-xs italic"
-          >
-            Please fill out this field.
-          </p>
-        </div>
-
-        <div class="w-full md:w-1/2 mb-6 px-3">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-email"
-          >
-            Email<span
+              Name<span :class="{ 'text-red-500': !data.form.name.length }">
+                &nbsp;*</span
+              >
+            </label>
+            <input
+              class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+              id="grid-first-name"
+              type="text"
+              placeholder="Jane"
+              v-model="data.form.name"
               :class="{
-                'text-red-500':
-                  !data.form.email.length || !isValidEmail(data.form.email),
+                'border-red-500': !data.form.name.length && data.submission,
               }"
+            />
+            <p
+              v-if="!data.form.name.length && data.submission"
+              class="text-red-500 text-xs italic"
             >
-              &nbsp;*</span
-            >
-          </label>
-          <input
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-email"
-            type="email"
-            placeholder="example@solarvista.com"
-            v-model="data.form.email"
-            :class="{
-              'border-red-500': !data.form.email.length && data.submission,
-            }"
-          />
-          <p
-            v-if="!data.form.email.length && data.submission"
-            class="text-red-500 text-xs italic"
-          >
-            Please enter a valid email.
-          </p>
-        </div>
+              Please fill out this field.
+            </p>
+          </div>
 
-        <div class="w-full md:w-1/2 px-3 mb-6">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-message"
-          >
-            Message<span :class="{ 'text-red-500': !data.form.message.length }">
-              &nbsp;*</span
+          <div class="w-full md:w-1/2 mb-6 px-3">
+            <label
+              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              for="grid-company-name"
             >
-          </label>
-          <textarea
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-message"
-            type="text"
-            placeholder="Type message here..."
-            rows="5"
-            :class="{
-              'border-red-500': !data.form.message.length && data.submission,
-            }"
-            v-model="data.form.message"
-          />
-          <p
-            v-if="!data.form.message.length && data.submission"
-            class="text-red-500 text-xs italic"
-          >
-            Please fill out this field.
-          </p>
-        </div>
-        <div class="w-full md:w-1/2 px-3 mt-6">
-          <button
-            type="submit"
-            @click="(e) => submitForm(e)"
-            class="btn block bg-[#41B883] text-white rounded-md p-3 w-full mb-6 m-auto md:m-0 md:w-4/12 text-center"
-          >
-            <span v-if="!data.form.submitted && !data.loading">Send</span>
-            <span v-else-if="data.form.submitted"> Sent</span>
-            <ButtonSpinner v-else-if="data.loading" />
-          </button>
+              Company<span
+                :class="{ 'text-red-500': !data.form.company.length }"
+              >
+                &nbsp;*</span
+              >
+            </label>
+            <input
+              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="grid-company-name"
+              type="text"
+              placeholder="Doe"
+              v-model="data.form.company"
+              :class="{
+                'border-red-500': !data.form.company.length && data.submission,
+              }"
+            />
+            <p
+              v-if="!data.form.company.length && data.submission"
+              class="text-red-500 text-xs italic"
+            >
+              Please fill out this field.
+            </p>
+          </div>
 
-          <p v-if="data.form.submitted" class="text-xs italic">
-            Thank you {{ data.form.name }} for contacting Solar Vista. We'll be
-            in contact 🌞
-          </p>
+          <div class="w-full md:w-1/2 mb-6 px-3">
+            <label
+              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              for="grid-email"
+            >
+              Email<span
+                :class="{
+                  'text-red-500':
+                    !data.form.email.length || !isValidEmail(data.form.email),
+                }"
+              >
+                &nbsp;*</span
+              >
+            </label>
+            <input
+              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="grid-email"
+              type="email"
+              placeholder="example@solarvista.com"
+              v-model="data.form.email"
+              :class="{
+                'border-red-500': !data.form.email.length && data.submission,
+              }"
+            />
+            <p
+              v-if="!data.form.email.length && data.submission"
+              class="text-red-500 text-xs italic"
+            >
+              Please enter a valid email.
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/2 px-3 mb-6">
+            <label
+              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              for="grid-message"
+            >
+              Message<span
+                :class="{ 'text-red-500': !data.form.message.length }"
+              >
+                &nbsp;*</span
+              >
+            </label>
+            <textarea
+              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="grid-message"
+              type="text"
+              placeholder="Type message here..."
+              rows="5"
+              :class="{
+                'border-red-500': !data.form.message.length && data.submission,
+              }"
+              v-model="data.form.message"
+            />
+            <p
+              v-if="!data.form.message.length && data.submission"
+              class="text-red-500 text-xs italic"
+            >
+              Please fill out this field.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 px-3 mt-6">
+            <button
+              type="submit"
+              @click="(e) => submitForm(e)"
+              class="btn block bg-[#41B883] text-white rounded-md p-3 w-full mb-6 m-auto md:m-0 md:w-4/12 text-center"
+            >
+              <span v-if="!data.form.submitted && !data.loading">Send</span>
+              <span v-else-if="data.form.submitted"> Sent</span>
+              <ButtonSpinner v-else-if="data.loading" />
+            </button>
+
+            <p v-if="data.form.submitted" class="text-sm italic">
+              Thank you {{ data.form.name }} for contacting Solar Vista. We'll
+              be in contact 🌞
+            </p>
+          </div>
         </div>
+      </form>
+      <div class="something here m-auto hidden md:flex">
+        <img
+          src="../../../assets/images/two-buildings.png"
+          alt="Solar Solutions"
+          class="rounded-xl max-w-[450px] h-[350px]"
+        />
       </div>
-    </form>
+    </div>
   </div>
 </template>

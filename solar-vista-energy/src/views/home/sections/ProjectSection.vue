@@ -44,18 +44,18 @@ const projects: Array<any> = [
  */
 </script>
 <template>
-  <div class="container m-auto overflow-hidden my-20 md:mb-8">
+  <div class="container m-auto overflow-hidden my-20 lg:mb-8">
     <h3
-      class="text-4xl text-center md:text-left md:text-6xl my-5 md:px-2 font-bold"
+      class="text-4xl text-center lg:text-left lg:text-6xl my-5 lg:px-2 font-bold"
     >
       Proud Projects
     </h3>
-    <h4 class="text-lg md:text-2xl px-2 mb-8 text-center md:text-left">
+    <h4 class="text-lg lg:text-2xl px-2 mb-8 text-center lg:text-left">
       Just a few notable names we've worked with, to help the world be a better
       place, and give our next generaton a brighter future.
     </h4>
-    <div class="projects grid place-items-center relative md:min-h-[50vh] my-6">
-      <div class="slider m-auto w-[90%] md:w-full md:overflow-hidden md:py-5">
+    <div class="projects grid place-items-center relative lg:min-h-[50vh] my-6">
+      <div class="slider m-auto w-[90%] lg:w-full lg:overflow-hidden lg:py-5">
         <div class="slide-track flex">
           <!-- 4 SLIDES -->
           <ProjectPreview

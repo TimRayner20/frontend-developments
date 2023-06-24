@@ -23,17 +23,17 @@ const props = defineProps({
       <img
         :src="props.image"
         :alt="props.title"
-        class="h-[300px] md:h-[350px] w-full"
+        class="h-[300px] lg:h-[350px] w-full"
       />
     </div>
-    <div class="preview-content text-center md:text-start md:px-5">
+    <div class="preview-content text-center lg:text-start lg:px-5">
       <h3 class="text-xl font-bold my-2">{{ props.title }}</h3>
       <p class="text-lg">
         {{ props.description }}
       </p>
       <a
         href="/about"
-        class="btn block bg-[#41B883] text-white rounded-md p-3 w-2/3 mb-6 m-auto md:m-0 md:my-6 md:w-5/12 text-center mt-5"
+        class="btn block bg-[#41B883] text-white rounded-md p-3 w-2/3 mb-6 m-auto lg:m-0 lg:my-6 lg:w-5/12 text-center mt-5"
       >
         Read more
       </a>
