@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { computed, onMounted, reactive } from "vue";
 
+const emit = defineEmits(["open-mobile-nav"]);
+
 const data = reactive({
   scrollPosition: 0 as Number,
 });
@@ -35,6 +37,7 @@ const updateScroll = () => {
         >
       </ul>
       <font-awesome-icon
+        @click="emit('open-mobile-nav')"
         class="md:hidden ml-auto mr-5 hover:cursor-pointer text-4xl"
         icon="fa-standard
      fa-bars-staggered"

@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+//https://www.sunsave.energy/signup - price calculator
+</script>
 
 <template>
   <div
