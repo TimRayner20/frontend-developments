@@ -53,17 +53,22 @@ const submitForm = (e: event) => {
 
 <template>
   <div class="contact-section container m-auto my-20">
-    <h3 class="text-4xl text-center md:text-left md:text-6xl my-5 font-bold">
-      Contact
-    </h3>
-    <p class="text-lg mt-6 my-5 text-center md:text-left">
-      Want to get in touch? We'd love to hear from you! You can reach us by
-      filling out the form below or by emailing us at
-      <a href="mailto:tim.rayner2020@gmail.com">contact@solarvista.com</a>
-    </p>
+    <div class="text-center lg:text-left lg:w-1/2 my-16">
+      <h3 class="text-4xl text-center lg:text-left md:text-6xl my-5 font-bold">
+        Contact
+      </h3>
+      <p class="text-lg mt-6 my-5 text-center lg:text-left">
+        Want to get in touch? We'd love to hear from you! You can reach us by
+        filling out the form below or by emailing us at
+        <a href="mailto:tim.rayner2020@gmail.com">contact@solarvista.com</a>
+      </p>
+    </div>
 
     <div class="flex flex-row">
-      <form id="home-contact-form" class="container w-3/4 m-auto max-w-lg">
+      <form
+        id="home-contact-form"
+        class="container w-3/4 lg:w-full m-auto lg:m-0 max-w-lg"
+      >
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -121,7 +126,7 @@ const submitForm = (e: event) => {
             </p>
           </div>
 
-          <div class="w-full md:w-1/2 mb-6 px-3">
+          <div class="w-full md:w-full mb-6 px-3">
             <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-email"
@@ -153,7 +158,7 @@ const submitForm = (e: event) => {
             </p>
           </div>
 
-          <div class="w-full md:w-1/2 px-3 mb-6">
+          <div class="w-full md:w-full px-3 mb-6">
             <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-message"
@@ -182,11 +187,11 @@ const submitForm = (e: event) => {
               Please fill out this field.
             </p>
           </div>
-          <div class="w-full md:w-1/2 px-3 mt-6">
+          <div class="w-full px-3 mt-6">
             <button
               type="submit"
               @click="(e) => submitForm(e)"
-              class="btn block bg-[#41B883] text-white rounded-md p-3 w-full mb-6 m-auto md:m-0 md:w-4/12 text-center"
+              class="btn block bg-[#41B883] text-white rounded-md p-3 w-full mb-6 m-auto md:m-0 lg:w-4/12 text-center"
             >
               <span v-if="!data.form.submitted && !data.loading">Send</span>
               <span v-else-if="data.form.submitted"> Sent</span>
@@ -200,11 +205,11 @@ const submitForm = (e: event) => {
           </div>
         </div>
       </form>
-      <div class="something here m-auto hidden md:flex">
+      <div class="m-auto hidden lg:flex lg:m-0 lg:ml-auto">
         <img
           src="../../../assets/images/two-buildings.png"
           alt="Solar Solutions"
-          class="rounded-xl max-w-[450px] h-[350px]"
+          class="rounded-xl w-auto h-[85%] align-middle m-auto"
         />
       </div>
     </div>
