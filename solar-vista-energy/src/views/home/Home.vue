@@ -4,7 +4,7 @@ import HomeHero from "./components/HomeHero.vue";
 import AboutSection from "./sections/AboutSection.vue";
 import ContactSection from "./sections/ContactSection.vue";
 import ProjectSection from "./sections/ProjectSection.vue";
-import UnknownToolSection from "./sections/UnknownToolSection.vue";
+import PriceCalculator from "./sections/PriceCalculator.vue";
 import CompanyBadge from "./components/CompanyBadge.vue";
 const companyHighlights: Array<any> = [
   {
@@ -123,7 +123,7 @@ const companyBadges: Array<any> = [
   </div>
 
   <!-- UNKNOWN TOOL SECTION -->
-  <UnknownToolSection />
+  <PriceCalculator />
 
   <!-- CONACT SECTION-->
   <ContactSection />
