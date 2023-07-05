@@ -3,6 +3,9 @@ import type { calculatorStep } from "@/types/home-types";
 import type { PropType } from "vue";
 import { computed, reactive, onMounted, watch } from "vue";
 
+/**
+ * @tutorial - https://www.youtube.com/watch?v=TphsZyv1oRo&t=29s
+ */
 const props = defineProps({
   steps: {
     type: Array as PropType<calculatorStep[]>,
