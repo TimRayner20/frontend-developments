@@ -1,114 +1,12 @@
 <script setup lang="ts">
-import { computed, reactive, watch } from "vue";
+import { computed, reactive, watch, ref } from "vue";
+
+import type { calculatorStep } from "@/types/home-types.ts";
+import { questionType } from "@/enums/home-enums.ts";
+import { defaultSteps } from "@/constants/home-constants.ts";
+
+import CalculatorProgress from "../components/CalculatorProgress.vue";
 //https://www.sunsave.energy/signup - price calculator
-
-enum questionType {
-  text,
-  number,
-  choice,
-  list,
-}
-
-type calculatorStep = {
-  index: number;
-  title: string;
-  stepCompleted: boolean;
-  question?: question;
-  answered: boolean;
-};
-
-type question = {
-  question: string;
-  choices?: string[];
-  answer: any;
-  type: questionType;
-};
-
-const defaultSteps: calculatorStep[] = [
-  {
-    index: 0,
-    title: "Select your home type",
-    stepCompleted: false,
-    question: {
-      question: "Select your home type",
-      choices: [
-        "Detached",
-        "Semi-detached",
-        "Terraced",
-        "Flat",
-        "Bungalow",
-        "Other",
-      ],
-      answer: "",
-      type: questionType.choice,
-    },
-    answered: false,
-  },
-
-  {
-    index: 1,
-    title: "How many people live in your home?",
-    stepCompleted: false,
-    question: {
-      question: "How many people live in your home?",
-      answer: "",
-      type: questionType.number,
-    },
-    answered: false,
-  },
-  {
-    index: 2,
-    title: "Do you own your home?",
-    stepCompleted: false,
-    question: {
-      question: "Do you own your home?",
-      choices: ["Yes", "No"],
-      answer: "",
-      type: questionType.choice,
-    },
-    answered: false,
-  },
-  {
-    index: 3,
-    title: "How much do you spend on electricity per month?",
-    stepCompleted: false,
-    question: {
-      question: "How much do you spend on electricity per month?",
-      answer: "",
-      type: questionType.number,
-    },
-    answered: false,
-  },
-  {
-    index: 4,
-    title:
-      "Where would you like the solar panels to be installed? (address, our adv satalite tech will determine roof space)",
-    stepCompleted: false,
-    question: {
-      question: "Where would you like the solar panels to be installed?",
-      answer: "",
-      type: questionType.text,
-    },
-    answered: false,
-  },
-  {
-    index: 5,
-    title: "What's your email address?",
-    stepCompleted: false,
-    question: {
-      question: "Now we just need your email address",
-      answer: "",
-      type: questionType.text,
-    },
-    answered: false,
-  },
-  {
-    index: 6,
-    title: "You could save (with contact form)",
-    stepCompleted: false,
-    answered: false,
-  },
-];
 
 const data = reactive({
   currentCalculatorStep: defaultSteps[0] as calculatorStep,
@@ -123,7 +21,6 @@ const selectChoice = (choice: string) => {
 watch(
   () => data.currentCalculatorStep.question?.answer,
   () => {
-    console.log("watch");
     if (data.currentCalculatorStep.question) {
       const answer = data.currentCalculatorStep.question.answer;
 
@@ -152,10 +49,16 @@ const decrementStep = () => {
 <template>
   <!-- Step Bar-->
 
-  <div class="container display flex flex-col m-auto border">
+  <div class="container display flex flex-col m-auto border p-16">
     <!-- HEADER-->
     <div class="text-center md:text-left">
-      Step {{ data.currentCalculatorStep.index + 1 }}
+      <!-- progressbar -->
+      <CalculatorProgress
+        :steps="data.calculatorSteps"
+        :currentStep="data.currentCalculatorStep.index"
+        :activeColor="'#41B883'"
+        :passiveColor="'#c4c9c7'"
+      />
     </div>
     <div class="step-content text-center md:text-left">
       <!-- STEP [1-6] -->

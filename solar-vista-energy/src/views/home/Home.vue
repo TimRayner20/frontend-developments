@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import {
+  companyBadges,
+  companyHighlights,
+} from "@/constants/home-constants.ts";
+
 import Highlight from "./components/Highlight.vue";
 import HomeHero from "./components/HomeHero.vue";
 import AboutSection from "./sections/AboutSection.vue";
@@ -6,66 +11,6 @@ import ContactSection from "./sections/ContactSection.vue";
 import ProjectSection from "./sections/ProjectSection.vue";
 import PriceCalculator from "./sections/PriceCalculator.vue";
 import CompanyBadge from "./components/CompanyBadge.vue";
-const companyHighlights: Array<any> = [
-  {
-    title: "96GW solar modules shipments",
-    icon: "fa-standard fa-solar-panel",
-  },
-  {
-    title: "Module capacity 75GW",
-    icon: "fa-standard fa-battery-full",
-  },
-  {
-    title: "25GW project pipeline",
-    icon: "fa-standard fa-leaf",
-  },
-  {
-    title: "Subsidiaries in 23 countries",
-    icon: "fa-standard fa-earth-americas",
-  },
-  {
-    title: "Over 20 manufacturing facilities",
-    icon: "fa-standard fa-industry",
-  },
-];
-
-const companyBadges: Array<any> = [
-  {
-    company: "Amazon AWS",
-    image:
-      "https://cdn.icon-icons.com/icons2/2389/PNG/512/amazon_aws_logo_icon_145507.png",
-    link: "https://aws.amazon.com/",
-  },
-  {
-    company: "Land Rover",
-    image:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Land_Rover_logo_black.svg/2560px-Land_Rover_logo_black.svg.png",
-    link: "https://www.landrover.co.uk/index.html",
-  },
-  {
-    company: "Cisco",
-    image:
-      "https://cdn.freebiesupply.com/images/large/2x/cisco-logo-black-transparent.png",
-    link: "https://www.cisco.com/site/uk",
-  },
-  {
-    company: "Airbnb",
-    image:
-      "https://cdn.freebiesupply.com/images/large/2x/airbnb-logo-black-transparent.png",
-    link: "https://www.airbnb.co.uk/",
-  },
-  {
-    company: "Nissan",
-    image: "https://www.carlogos.org/car-logos/nissan-logo-2020-black.png",
-    link: "https://www.nissan.co.uk/",
-  },
-  {
-    company: "WWF",
-    image:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/800px-WWF_logo.svg.pnghttps://logos-world.net/wp-content/uploads/2020/11/World-Wide-Fund-for-Nature-WWF-Emblem.png",
-    link: "https://www.wwf.org.uk/",
-  },
-];
 
 /**
  * @TODO ADD CONSISTENT CONTAINER MARGINS TO ALL PAGES AND COMPONENTS
