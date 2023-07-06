@@ -11,10 +11,15 @@ import ContactSection from "./sections/ContactSection.vue";
 import ProjectSection from "./sections/ProjectSection.vue";
 import PriceCalculator from "./sections/PriceCalculator.vue";
 import CompanyBadge from "./components/CompanyBadge.vue";
+import { reactive } from "vue";
 
 /**
  * @TODO ADD CONSISTENT CONTAINER MARGINS TO ALL PAGES AND COMPONENTS
  */
+
+const data = reactive({
+  priceCalcDisplayed: false,
+});
 </script>
 
 <template>
@@ -68,7 +73,27 @@ import CompanyBadge from "./components/CompanyBadge.vue";
   </div>
 
   <!-- UNKNOWN TOOL SECTION -->
-  <PriceCalculator />
+  <div
+    class="relative my-5 bg-[#34495e] text-white lg:mx-auto text-left lg:text-left lg:py-16 lg:pt-6 mb-0 py-12"
+  >
+    <PriceCalculator v-if="data.priceCalcDisplayed" />
+    <div v-else class="text-center">
+      <h3 class="text-4xl text-center lg:text-6xl my-8 font-bold">
+        We Do Retail Too!
+      </h3>
+      <p>
+        We're not only business-to-business. See how much Solar Vista panels
+        could save you at home with our quick-start price calculator.
+      </p>
+      <button
+        type="button"
+        @click="data.priceCalcDisplayed = true"
+        class="btn bg-[#41B883] text-white rounded-md p-3 mt-6 w-2/5 m-auto md:ml-0 mb-8"
+      >
+        Get Started
+      </button>
+    </div>
+  </div>
 
   <!-- CONACT SECTION-->
   <ContactSection />

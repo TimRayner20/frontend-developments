@@ -60,13 +60,13 @@ const cssStyle = computed(() => {
         }"
       >
         <div
-          class="step-bubble w-[35px] h-[35px] rounded-full bg-[--passive-color] transition-all duration-[0.3s] ease-in-out flex items-center justify-center absolute"
+          class="step-bubble w-[17.5px] h-[17.5px] lg:w-[35px] lg:h-[35px] rounded-full bg-[--passive-color] transition-all duration-[0.3s] ease-in-out flex items-center justify-center absolute z-20"
         ></div>
         <div
-          class="step-line w-full h-[5px] bg-[--passive-color] top-[50%] left-0 -z-10 transform -translate-y-1/2"
+          class="step-line w-full h-[2.5px] bg-[--passive-color] top-[50%] left-0 z-10 transform -translate-y-1/2"
         >
           <div
-            class="line-fill w-0 h-[5px] bg-[--active-color] transition-all duration-[0.3s] ease-in-out"
+            class="line-fill w-0 h-[2.5px] bg-[--active-color] transition-all duration-[0.3s] ease-in-out"
           ></div>
         </div>
       </li>
@@ -86,8 +86,14 @@ const cssStyle = computed(() => {
 
 .step-active .step-bubble,
 .step-done .step-bubble {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
+
+  /** media query for screen ports above mobile */
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
   background-color: var(--active-color);
 }
 
