@@ -5,7 +5,7 @@ import {
 } from "@/constants/home-constants.ts";
 
 import Highlight from "./components/Highlight.vue";
-import HomeHero from "./components/HomeHero.vue";
+import HomeHero from "./sections/HomeHero.vue";
 import AboutSection from "./sections/AboutSection.vue";
 import ContactSection from "./sections/ContactSection.vue";
 import ProjectSection from "./sections/ProjectSection.vue";

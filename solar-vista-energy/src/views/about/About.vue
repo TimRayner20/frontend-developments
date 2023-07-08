@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AboutHeroSection from "@/views/about/sections/AboutHeroSection.vue";
+</script>
 
 <template>
-  <h1>About</h1>
+  <AboutHeroSection />
 </template>
