@@ -1,8 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BadgeShowcase from "../components/BadgeShowcase.vue";
+import {
+  companyBadges,
+  companyHighlights,
+} from "@/constants/home-constants.ts";
+</script>
 
 <template>
   <div
-    class="hero min-h-[45vh] flex flex-col -mt-20 relative text-center md:text-left"
+    class="hero min-h-[45vh] h-full -mt-20 relative text-center m-auto ... flex"
   >
     <!-- TODO: Change image for mobile-->
     <img
@@ -20,19 +26,17 @@
       src="@/assets/images/bg-gradient.svg"
       class="bg-gradient absolute top-[-40px] right-[-410px] w-[95%] -z-10"
     />
-    <div
-      class="container flex hero-content align-middle md:align-top md:mt-32 md:m-[44px auto] flex flex-col md:flex-row w-full m-auto md:align-middle"
-    >
-      <div
-        class="md:justify-start align-middlemd:mr-10 mt-28 md:mt-0 mb-16 md:mb-0 md:w-6/12 h-full flex flex-col justify-center m-auto"
-      >
+    <div class="outer block items-center m-auto self-center">
+      <div class="align-middle text-center mx-auto justify-center">
         <h1 class="text-black text-5xl md:text-7xl my-5 font-bold">
-          About Solar Vista
+          Renewable Solar Solutions
         </h1>
-        <p class="text-black text-xl mt-3">Making A Solar Difference ☀️</p>
+        <p class="text-black text-xl mt-3">some supporting text about us☀️</p>
       </div>
     </div>
   </div>
+  <!-- BADGES -->
+  <BadgeShowcase :badges="companyBadges" />
 </template>
 <style>
 /** Mobile First Media Queries */

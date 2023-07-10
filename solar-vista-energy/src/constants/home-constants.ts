@@ -1,5 +1,5 @@
 import { questionType } from "@/enums/home-enums";
-import type { calculatorStep } from "@/types/home-types";
+import type { CompanyBadge, calculatorStep } from "@/types/home-types";
 
 export const defaultSteps: calculatorStep[] = [
   {
@@ -87,7 +87,7 @@ export const defaultSteps: calculatorStep[] = [
   },
 ];
 
-export const companyBadges: Array<any> = [
+export const companyBadges: Array<CompanyBadge> = [
   {
     company: "Amazon AWS",
     image:
