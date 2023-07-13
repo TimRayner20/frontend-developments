@@ -1,15 +1,10 @@
 <script setup lang="ts">
 import BadgeShowcase from "../components/BadgeShowcase.vue";
-import {
-  companyBadges,
-  companyHighlights,
-} from "@/constants/home-constants.ts";
+import { companyBadges } from "@/constants/home-constants.ts";
 </script>
 
 <template>
-  <div
-    class="hero min-h-[45vh] h-full -mt-20 relative text-center m-auto ... flex"
-  >
+  <div class="hero h-full -mt-20 relative text-center m-auto ... flex">
     <!-- TODO: Change image for mobile-->
     <img
       id="bg-gradient-mobile"
@@ -27,7 +22,7 @@ import {
       class="bg-gradient absolute top-[-40px] right-[-410px] w-[95%] -z-10"
     />
     <div class="outer block items-center m-auto self-center">
-      <div class="align-middle text-center mx-auto justify-center">
+      <div class="align-middle text-center mx-auto justify-center mt-16">
         <h1 class="text-black text-5xl md:text-7xl my-5 font-bold">
           Renewable Solar Solutions
         </h1>
