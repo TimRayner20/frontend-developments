@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import BadgeShowcase from "../components/BadgeShowcase.vue";
-import { companyBadges } from "@/constants/home-constants.ts";
+import { companyBadges } from "@/constants/home-constants";
 </script>
 
 <template>

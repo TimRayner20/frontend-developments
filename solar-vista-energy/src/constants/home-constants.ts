@@ -120,7 +120,7 @@ export const companyBadges: Array<CompanyBadge> = [
   {
     company: "WWF",
     image:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/800px-WWF_logo.svg.pnghttps://logos-world.net/wp-content/uploads/2020/11/World-Wide-Fund-for-Nature-WWF-Emblem.png",
+      "https://cdn.freebiesupply.com/logos/large/2x/wwf-3-logo-black-and-white.png",
     link: "https://www.wwf.org.uk/",
   },
 ];
