@@ -20,6 +20,8 @@ import {
   faLeaf,
   faSolarPanel,
   faSun,
+  faBars,
+  faX,
 } from "@fortawesome/free-solid-svg-icons";
 /* add icons to the library */
 library.add(
@@ -30,7 +32,9 @@ library.add(
   faIndustry,
   faBatteryFull,
   faLeaf,
-  faAnglesRight
+  faAnglesRight,
+  faBars,
+  faX
 );
 
 const app = createApp(App)

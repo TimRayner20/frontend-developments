@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import { computed, onMounted, reactive } from "vue";
 
-const emit = defineEmits(["open-mobile-nav"]);
+const emit = defineEmits(["toggle-mobile-nav"]);
+
+const props = defineProps({
+  navbarOpen: Boolean,
+});
 
 const data = reactive({
   scrollPosition: 0 as Number,
@@ -36,11 +40,20 @@ const updateScroll = () => {
           >Contact</router-link
         >
       </ul>
+
       <font-awesome-icon
-        @click="emit('open-mobile-nav')"
+        v-if="!props.navbarOpen"
+        @click="emit('toggle-mobile-nav')"
         class="md:hidden ml-auto mr-5 hover:cursor-pointer text-4xl"
         icon="fa-standard
      fa-bars-staggered"
+      />
+      <font-awesome-icon
+        v-else
+        @click="emit('toggle-mobile-nav')"
+        class="md:hidden ml-auto mr-5 hover:cursor-pointer text-4xl"
+        icon="fa-standard
+        fa-x"
       />
     </div>
   </nav>
