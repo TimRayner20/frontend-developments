@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="badges border overflow-hidden mt-8">
+  <div class="badges  overflow-hidden mt-8">
     <ul class="flex">
       <li v-for="badge in props.badges" :key="badge.company" class="h-full p-0">
         <img :src="badge.image" :alt="badge.company" class="brand p-0" />
