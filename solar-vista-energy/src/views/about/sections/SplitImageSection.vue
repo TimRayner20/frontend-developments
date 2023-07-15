@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 .image {
   content: "";
 
