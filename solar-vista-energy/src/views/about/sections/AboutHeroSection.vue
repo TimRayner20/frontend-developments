@@ -34,7 +34,9 @@ import { companyBadges } from "@/constants/home-constants";
     class="divider mt-8 border border-gray-800 w-2/3 m-auto opacity-30"
   ></div>
   <!-- BADGES -->
-  <BadgeShowcase :badges="companyBadges" />
+  <div class="container m-auto">
+    <BadgeShowcase :badges="companyBadges" />
+  </div>
 </template>
 <style>
 /** Mobile First Media Queries */

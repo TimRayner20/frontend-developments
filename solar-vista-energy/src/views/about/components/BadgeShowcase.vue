@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PropType } from "vue";
+import { computed, type PropType } from "vue";
 import type { CompanyBadge } from "@/types/home-types";
 
 const props = defineProps({
@@ -8,19 +8,24 @@ const props = defineProps({
     required: true,
   },
 });
+
+const filteredBadges = computed(() => {
+  return props.badges.filter(
+    (badge) => badge.company !== "Amazon AWS" && badge.company !== "Starbucks"
+  );
+});
 </script>
 
 <template>
-  <div class="badges  overflow-hidden mt-8">
-    <ul class="flex">
-      <li v-for="badge in props.badges" :key="badge.company" class="h-full p-0">
-        <img :src="badge.image" :alt="badge.company" class="brand p-0" />
+  <div class="badge-container mt-8">
+    <ul class="flex flex-row">
+      <li
+        v-for="badge in filteredBadges"
+        :key="badge.company"
+        class="brand-item w-2/12 h-1/4 align-middle m-auto justify-between"
+      >
+        <img :src="badge.image" :alt="badge.company" class="brand-img h-full" />
       </li>
     </ul>
   </div>
 </template>
-<style lang="scss" scoped>
-.brand {
-  vertical-align: middle;
-}
-</style>
