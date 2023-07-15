@@ -22,7 +22,7 @@ const filteredBadges = computed(() => {
       <li
         v-for="badge in filteredBadges"
         :key="badge.company"
-        class="brand-item w-2/12 h-1/4 align-middle m-auto justify-between"
+        class="brand-item w-2/12 h-1/4 md:w-1/12 align-middle m-auto"
       >
         <img
           :src="badge.image"
