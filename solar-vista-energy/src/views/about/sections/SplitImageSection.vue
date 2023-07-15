@@ -6,15 +6,15 @@
       class="image h-[40vh] flex flex-col justify-between content-[''] w-full min-h-[40vh] content-center md:flex-row my-20"
     >
       <div
-        class="panel w-[85%] h-1/3 md:h-full mx-auto my-3 md:mx-3 md:my-auto sm:background-y"
+        class="panel w-[85%] h-1/3 md:h-full mx-auto my-3 md:mx-3 md:my-auto rounded-lg"
         id="panel-1"
       ></div>
       <div
-        class="panel w-[85%] h-1/3 md:h-full mx-auto my-3 md:mx-3 md:my-auto"
+        class="panel w-[85%] h-1/3 md:h-full mx-auto my-3 md:mx-3 md:my-auto rounded-lg"
         id="panel-2"
       ></div>
       <div
-        class="panel w-[85%] h-1/3 md:h-full mx-auto my-3 md:mx-3 md:my-auto"
+        class="panel w-[85%] h-1/3 md:h-full mx-auto my-3 md:mx-3 md:my-auto rounded-lg"
         id="panel-3"
       ></div>
     </div>

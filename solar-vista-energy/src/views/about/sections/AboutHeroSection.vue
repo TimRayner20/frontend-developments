@@ -5,7 +5,6 @@ import { companyBadges } from "@/constants/home-constants";
 
 <template>
   <div class="hero h-full -mt-20 relative text-center m-auto ... flex">
-    <!-- TODO: Change image for mobile-->
     <img
       id="bg-gradient-mobile"
       src="@/assets/images/bg-gradient-mobile.svg"
