@@ -9,7 +9,7 @@ const mobileNavOpen = ref(false);
 
 const toggleMobileNav = () => {
   mobileNavOpen.value = !mobileNavOpen.value;
-  if (mobileNavOpen) {
+  if (mobileNavOpen.value) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "auto";
