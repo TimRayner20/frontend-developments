@@ -94,7 +94,7 @@ const filteredTimelineItems = computed(() => {
   height: 10px;
   top: 24px;
   right: -6px;
-  background: --primary;
+  background: #41b883;
   border-radius: 50%;
   box-shadow: 0 0 0 3px #41b883a9;
 }
@@ -105,14 +105,14 @@ const filteredTimelineItems = computed(() => {
   height: 10px;
   top: 24px;
   left: -4px;
-  background: --primary;
+  background: #41b883;
   border-radius: 50%;
   box-shadow: 0 0 0 3px #41b883a9;
 }
 .timeline ul li h3 {
   padding: 0;
   margin: 0;
-  color: --primary;
+  color: #41b883;
   font-weight: 600;
 }
 .timeline ul li p {
