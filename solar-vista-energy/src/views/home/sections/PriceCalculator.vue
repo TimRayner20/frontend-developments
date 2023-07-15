@@ -156,7 +156,7 @@ const decrementStep = () => {
           :disabled="!data.currentCalculatorStep.answered"
           class="btn text-white rounded-md p-3 mt-6 mr-5 m-auto md:ml-0"
           :class="{
-            'bg-[#41B883]': data.currentCalculatorStep.answered,
+            'bg-[--primary]': data.currentCalculatorStep.answered,
             'bg-[#c4c9c7]': !data.currentCalculatorStep.answered,
           }"
         >

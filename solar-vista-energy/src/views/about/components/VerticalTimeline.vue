@@ -94,7 +94,7 @@ const filteredTimelineItems = computed(() => {
   height: 10px;
   top: 24px;
   right: -6px;
-  background: #41b883;
+  background: --primary;
   border-radius: 50%;
   box-shadow: 0 0 0 3px #41b883a9;
 }
@@ -105,14 +105,14 @@ const filteredTimelineItems = computed(() => {
   height: 10px;
   top: 24px;
   left: -4px;
-  background: #41b883;
+  background: --primary;
   border-radius: 50%;
   box-shadow: 0 0 0 3px #41b883a9;
 }
 .timeline ul li h3 {
   padding: 0;
   margin: 0;
-  color: #41b883;
+  color: --primary;
   font-weight: 600;
 }
 .timeline ul li p {
@@ -130,7 +130,7 @@ const filteredTimelineItems = computed(() => {
   right: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: #41b883;
+  background: --primary;
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px #41b883a9;
@@ -141,7 +141,7 @@ const filteredTimelineItems = computed(() => {
   left: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: #41b883;
+  background: --primary;
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px #41b883a9;

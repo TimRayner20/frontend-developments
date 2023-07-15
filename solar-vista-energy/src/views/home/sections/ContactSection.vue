@@ -191,7 +191,7 @@ const submitForm = (e: event) => {
             <button
               type="submit"
               @click="(e) => submitForm(e)"
-              class="btn block bg-[#41B883] text-white rounded-md p-3 w-full mb-6 m-auto md:m-0 lg:w-4/12 text-center"
+              class="btn block bg-[--primary] text-white rounded-md p-3 w-full mb-6 m-auto md:m-0 lg:w-4/12 text-center"
             >
               <span v-if="!data.form.submitted && !data.loading">Send</span>
               <span v-else-if="data.form.submitted"> Sent</span>

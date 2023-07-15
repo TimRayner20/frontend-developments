@@ -33,7 +33,7 @@ const props = defineProps({
       </p>
       <a
         href="/about"
-        class="btn block bg-[#41B883] text-white rounded-md p-3 w-2/3 mb-6 m-auto lg:m-0 lg:my-6 lg:w-5/12 text-center mt-5"
+        class="btn block bg-[--primary] text-white rounded-md p-3 w-2/3 mb-6 m-auto lg:m-0 lg:my-6 lg:w-5/12 text-center mt-5"
       >
         Read more
       </a>

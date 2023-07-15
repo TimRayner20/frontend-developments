@@ -24,7 +24,7 @@
         </p>
         <a
           href="/about"
-          class="btn block bg-[#41B883] text-white rounded-lg p-3 w-2/3 mb-6 m-auto lg:m-0 lg:w-4/12 text-center"
+          class="btn block bg-[--primary] text-white rounded-lg p-3 w-2/3 mb-6 m-auto lg:m-0 lg:w-4/12 text-center"
         >
           Read more
         </a>

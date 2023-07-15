@@ -88,7 +88,7 @@ const data = reactive({
       <button
         type="button"
         @click="data.priceCalcDisplayed = true"
-        class="btn bg-[#41B883] text-white rounded-md p-3 mt-6 w-2/5 m-auto md:ml-0 mb-8"
+        class="btn bg-[--primary] text-white rounded-md p-3 mt-6 w-2/5 m-auto md:ml-0 mb-8"
       >
         Get Started
       </button>
