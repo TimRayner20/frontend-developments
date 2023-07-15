@@ -11,7 +11,7 @@ const redirect = (path: string) => {
 
 <template>
   <div
-    class="mobile-nav absolute top-0 right-0 bottom-0 left-0 bg-emerald-400 z-20 overflow-hidden"
+    class="mobile-nav fixed top-0 right-0 left-0 bg-emerald-400 z-20 overflow-hidden h-screen"
   >
     <div class="nav-content mt-32">
       <ul class="navigation m-auto text-center flex flex-col">
