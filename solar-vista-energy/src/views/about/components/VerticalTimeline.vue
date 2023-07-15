@@ -130,7 +130,7 @@ const filteredTimelineItems = computed(() => {
   right: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: --primary;
+  background: #41b883;
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px #41b883a9;
@@ -141,7 +141,7 @@ const filteredTimelineItems = computed(() => {
   left: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: --primary;
+  background: #41b883;
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px #41b883a9;
