@@ -118,10 +118,10 @@ export const companyBadges: Array<CompanyBadge> = [
     link: "https://www.nissan.co.uk/",
   },
   {
-    company: "WWF",
+    company: "Starbucks",
     image:
-      "https://cdn.freebiesupply.com/logos/large/2x/wwf-3-logo-black-and-white.png",
-    link: "https://www.wwf.org.uk/",
+      "https://cdn.freebiesupply.com/logos/large/2x/starbucks-coffee-logo-black-and-white.png",
+    link: "https://www.starbucks.co.uk/",
   },
 ];
 

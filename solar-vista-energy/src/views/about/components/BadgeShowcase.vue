@@ -11,10 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="badges">
-    <div
-      class="divider mt-8 border border-gray-800 w-2/3 m-auto opacity-30"
-    ></div>
+  <div class="badges border overflow-hidden mt-8">
     <ul class="flex">
       <li v-for="badge in props.badges" :key="badge.company" class="h-full p-0">
         <img :src="badge.image" :alt="badge.company" class="brand p-0" />
@@ -24,8 +21,6 @@ const props = defineProps({
 </template>
 <style lang="scss" scoped>
 .brand {
-  padding-top: 63px;
-  padding-bottom: 63px;
   vertical-align: middle;
 }
 </style>
