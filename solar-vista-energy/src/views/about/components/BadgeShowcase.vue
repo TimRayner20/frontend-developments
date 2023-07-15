@@ -24,7 +24,11 @@ const filteredBadges = computed(() => {
         :key="badge.company"
         class="brand-item w-2/12 h-1/4 align-middle m-auto justify-between"
       >
-        <img :src="badge.image" :alt="badge.company" class="brand-img h-full" />
+        <img
+          :src="badge.image"
+          :alt="badge.company"
+          class="brand-img h-full w-full"
+        />
       </li>
     </ul>
   </div>
