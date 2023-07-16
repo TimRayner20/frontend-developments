@@ -3,5 +3,5 @@ import ContactHeroSection from "@/views/contact/sections/ContactHeroSection.vue"
 </script>
 
 <template>
-  <ContactHeroSection />
+  <ContactHeroSection class="-mt-20" />
 </template>
