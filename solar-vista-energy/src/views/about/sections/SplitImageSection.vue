@@ -3,7 +3,7 @@
 <template>
   <div class="container m-auto">
     <div
-      class="image h-[40vh] md:h-[60vh] flex flex-col justify-between content-[''] w-full min-h-[40vh] content-center md:flex-row my-20"
+      class="image h-[40vh] md:h-[50vh] flex flex-col justify-between content-[''] w-full min-h-[40vh] content-center md:flex-row my-20"
     >
       <div
         class="panel w-[85%] h-1/3 md:h-full mx-auto my-3 md:mx-3 md:my-auto rounded-lg"

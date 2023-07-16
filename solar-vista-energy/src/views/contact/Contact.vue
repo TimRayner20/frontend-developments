@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ContactHeroSection from "@/views/contact/sections/ContactHeroSection.vue";
+</script>
 
 <template>
-  <h1>Contact</h1>
+  <ContactHeroSection />
 </template>
