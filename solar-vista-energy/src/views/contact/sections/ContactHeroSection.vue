@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { reactive } from "vue";
 import ButtonSpinner from "@/components/animation/ButtonSpinner.vue";
+import SocialIconsSmall from "@/components/social/SocialIconsSmall.vue";
 import { isValidEmail } from "@/helpers/email-helpers";
 const data = reactive({
   form: {
@@ -52,9 +53,11 @@ const submitForm = (e: event) => {
 </script>
 
 <template>
-  <div class="hero-container min-h-screen h-full flex flex-col md:flex-row">
+  <div
+    class="hero-container min-h-screen h-full md:flex-row m-auto flex flex-row p-5 md:pl-0 pr-0"
+  >
     <div
-      class="content-wrapperw-full md:w-1/2 h-full items-center content-center align-middle m-auto"
+      class="content-wrapper w-full md:w-1/2 h-full items-center content-center align-middle m-auto"
     >
       <div class="content-overlay"></div>
       <div class="content relative text-white">
@@ -65,21 +68,52 @@ const submitForm = (e: event) => {
         <p class="text-xs italic md:px-2">
           Lets just pretend like these AI generated human faces aren't blank
         </p>
-        <div class="contact-info">
-          <!--TODO-->
+        <div class="contact-info mx-2">
+          <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="mr-3 h-5 w-5"
+            >
+              <path
+                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+              />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+              />
+            </svg>
+            info@example.com
+          </p>
+          <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="mr-3 h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            + 01 234 567 88
+          </p>
         </div>
-        <div class="social-icons">
-          <!-- TODO-->
+        <div class="social-icons mt-4">
+          <SocialIconsSmall />
         </div>
       </div>
     </div>
     <!-- Form Section-->
     <div
-      class="form-wrapper w-full md:w-1/2 items-center content-center align-middle m-auto"
+      class="form-wrapper w-full md:w-1/2 items-center content-center align-middle m-auto px-20"
     >
       <div class="form-overlay"></div>
-      <div class="form w-full md:w-1/2 md:mt-[80px] mx-auto h-full relative">
-        <form id="home-contact-form" class="container w-3/4 lg:w-full m-auto">
+      c
+      <div class="form w-full md:mt-[80px] mx-auto h-full relative">
+        <form id="home-contact-form" class="w-3/4 lg:w-full m-auto">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
