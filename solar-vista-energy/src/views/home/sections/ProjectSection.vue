@@ -45,12 +45,10 @@ const projects: Array<any> = [
 </script>
 <template>
   <div class="container m-auto overflow-hidden my-20 lg:mb-8">
-    <h3
-      class="text-4xl text-center lg:text-left lg:text-6xl my-5 lg:px-2 font-bold"
-    >
+    <h3 class="text-center lg:text-left my-5 lg:px-2 font-bold">
       Proud Projects
     </h3>
-    <h4 class="text-lg lg:text-2xl px-2 mb-8 text-center lg:text-left">
+    <h4 class="px-2 mb-8 text-center lg:text-left">
       Just a few notable names we've worked with, to help the world be a better
       place, and give our next generaton a brighter future.
     </h4>

@@ -246,7 +246,7 @@ const submitForm = (e: event) => {
                 <ButtonSpinner v-else-if="data.loading" />
               </button>
 
-              <p v-if="data.form.submitted" class="text-lg">
+              <p v-if="data.form.submitted">
                 Thank you {{ data.form.name }} for contacting Solar Vista. We'll
                 be in contact 🌞
               </p>

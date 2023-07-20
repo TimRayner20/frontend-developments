@@ -22,10 +22,8 @@ import { companyBadges } from "@/constants/home-constants";
     />
     <div class="outer block items-center m-auto self-center">
       <div class="align-middle text-center mx-auto justify-center mt-16">
-        <h1 class="text-black text-5xl md:text-7xl my-5 font-bold">
-          Renewable Solar Solutions
-        </h1>
-        <p class="text-black text-xl mt-3">some supporting text about us☀️</p>
+        <h1 class="text-black my-5 font-bold">Renewable Solar Solutions</h1>
+        <p class="text-black mt-3">some supporting text about us☀️</p>
       </div>
     </div>
   </div>

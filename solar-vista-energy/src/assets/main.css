@@ -14,47 +14,65 @@ h3,
 h4,
 p {
   transition: all 0.2s ease-in-out;
-  line-height: 2.5rem !important; /* 24px */
+  line-height: var(--line-height) !important; /* 24px */
 }
 
-a,
-.green {
+h1,
+h2,
+h3,
+h4 {
+  line-height: var(--heading-line-height) !important; /* 24px */
+  font-family: var(--font-family) !important; /* "Inter", sans-serif */
 }
 
-
-
-
-  .inner-container {
-    width: 100%;
-  }
-  @media (min-width: 640px) {
-    .inner-container {
-      max-width: 640px;
-    }
-  }
-  @media (min-width: 768px) {
-    .inner-container {
-      max-width: 768px;
-    }
-  }
-  @media (min-width: 1024px) {
-    .inner-container {
-      max-width: 1024px;
-    }
-  }
-  @media (min-width: 1280px) {
-    .inner-container {
-      max-width: 1280px;
-    }
-  }
-  @media (min-width: 1536px) {
-    .inner-container {
-      max-width: 1536px;
-    }
-  }
-
-
-@media (min-width: 1024px) {
+p {
+  line-height: var(--paragraph-line-height) !important; /* 24px */
+  font-family: var(--font-family) !important; /* "Inter", sans-serif */
 }
 
+h1 {
+  font-size: 4rem !important; /* 64px */
+  @media screen and (min-width: var(--mq-tablet)) {
+    font-size: 5rem !important; /* 80px */
+  }
+  @media screen and (min-width: var(--mq-desktop)) {
+    font-size: 6rem !important; /* 96px */
+  }
+}
+h2 {
+  font-size: 2.5rem;
+  @media screen and (min-width: var(--mq-tablet)) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: var(--mq-desktop)) {
+    font-size: 4rem;
+  }
+}
+h3 {
+  font-size: 2.5rem;
+  @media screen and (min-width: var(--mq-tablet)) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: var(--mq-desktop)) {
+    font-size: 4rem;
+  }
+}
+h4 {
+  font-size: 2.5rem;
+  @media screen and (min-width: var(--mq-tablet)) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: var(--mq-desktop)) {
+    font-size: 4rem;
+  }
+}
 
+p {
+  font-size: 1rem;
+  @media screen and (min-width: var(--mq-tablet)) {
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width: var(--mq-desktop)) {
+    font-size: 1.5rem;
+  }
+}

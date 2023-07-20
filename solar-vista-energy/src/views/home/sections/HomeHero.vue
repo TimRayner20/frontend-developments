@@ -26,10 +26,8 @@
       <div
         class="md:justify-start align-middlemd:mr-10 mt-28 md:mt-0 mb-16 md:mb-0 md:w-6/12 h-full flex flex-col justify-center m-auto"
       >
-        <h1 class="text-black text-5xl md:text-7xl my-5 font-bold">
-          Solar Vista Energy
-        </h1>
-        <p class="text-black text-xl mt-3">Making A Solar Difference ☀️</p>
+        <h1 class="text-black my-5 font-bold">Solar Vista Energy</h1>
+        <p class="text-black mt-3">Making A Solar Difference ☀️</p>
         <div class="buttons w-full md:w-2/3 m-auto md:m-0">
           <button
             class="btn bg-[--primary] text-white rounded-md p-3 mt-6 w-full m-auto md:ml-0"

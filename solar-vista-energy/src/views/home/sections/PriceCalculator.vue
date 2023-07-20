@@ -50,7 +50,7 @@ const decrementStep = () => {
   <!-- Step Bar-->
   <div class="">
     <div class="container m-auto">
-      <h3 class="text-4xl text-center lg:text-6xl my-2 font-bold py-8">
+      <h3 class="text-center my-2 font-bold py-8">
         Solar Vista Price Calculator
       </h3>
     </div>

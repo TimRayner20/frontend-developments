@@ -54,9 +54,7 @@ const submitForm = (e: event) => {
 <template>
   <div class="contact-section container m-auto my-20">
     <div class="text-center lg:text-left lg:w-1/2 my-16">
-      <h3 class="text-4xl text-center lg:text-left md:text-6xl my-5 font-bold">
-        Contact
-      </h3>
+      <h3 class="text-center lg:text-left my-5 font-bold">Contact</h3>
       <p class="text-lg mt-6 my-5 text-center lg:text-left">
         Want to get in touch? We'd love to hear from you! You can reach us by
         filling out the form below or by emailing us at
@@ -198,7 +196,7 @@ const submitForm = (e: event) => {
               <ButtonSpinner v-else-if="data.loading" />
             </button>
 
-            <p v-if="data.form.submitted" class="text-sm italic">
+            <p v-if="data.form.submitted" class="italic">
               Thank you {{ data.form.name }} for contacting Solar Vista. We'll
               be in contact 🌞
             </p>

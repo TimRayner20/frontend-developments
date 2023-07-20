@@ -20,15 +20,26 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
+  /* colors */
   --primary: #41b883;
   --primary-overlay: #41b88356;
   --secondary-overlay: #41b883da;
   --secondary: #35495e;
-
-
   --primary-error: #ff3860;
   --primary-error-overlay: #ffffffbd;
 
+  /* margins /* 
+
+
+  /* font */
+  --font-family: "Inter", sans-serif;
+  --heading-line-height: 1;
+  --paragraph-line-height: 1.6;
+
+  /* media queries */
+  --mq-phone: 600px;
+  --mq-tablet: 768px;
+  --mq-desktop: 1024px;
 }
 
 /* semantic color variables for this project */
