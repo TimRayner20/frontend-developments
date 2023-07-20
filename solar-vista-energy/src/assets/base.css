@@ -23,6 +23,11 @@
   --primary: #41b883;
   --primary-overlay: #41b88356;
   --secondary: #35495e;
+
+
+  --primary-error: #ff3860;
+  --primary-error-overlay: #ffffffbd;
+
 }
 
 /* semantic color variables for this project */

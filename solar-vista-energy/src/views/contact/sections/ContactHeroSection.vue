@@ -60,11 +60,11 @@ const submitForm = (e: event) => {
       class="content-wrapper w-full md:w-1/2 h-full items-center content-center align-middle m-auto"
     >
       <div class="content-overlay"></div>
-      <div class="content relative text-white">
-        <h1 class="text-4xl md:text-6xl my-5 md:px-2 font-bold">
+      <div class="content relative text-white w-fit m-auto">
+        <h1 class="text-4xl md:text-8xl my-5 p2 font-bold">
           Let's Work <strong>Together</strong>
         </h1>
-        <h3 class="text-xl md:px-2">Start your solar journey today</h3>
+        <h3 class="text-3xl md:px-2 p-2">Start your solar journey today</h3>
         <p class="text-xs italic md:px-2">
           Lets just pretend like these AI generated human faces aren't blank
         </p>
@@ -112,12 +112,14 @@ const submitForm = (e: event) => {
     >
       <div class="form-overlay"></div>
       c
-      <div class="form w-full md:mt-[80px] mx-auto h-full relative">
+      <div
+        class="form w-full md:mt-[80px] mx-auto h-full relative w-fit m-auto"
+      >
         <form id="home-contact-form" class="w-3/4 lg:w-full m-auto">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
-                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                class="block uppercase tracking-wide text-gray-700 font-bold mb-2"
                 for="grid-first-name"
               >
                 Name<span :class="{ 'text-red-500': !data.form.name.length }">
@@ -136,7 +138,7 @@ const submitForm = (e: event) => {
               />
               <p
                 v-if="!data.form.name.length && data.submission"
-                class="text-red-500 text-xs italic"
+                class="text-[--primary-error-overlay]"
               >
                 Please fill out this field.
               </p>
@@ -144,7 +146,7 @@ const submitForm = (e: event) => {
 
             <div class="w-full md:w-1/2 mb-6 px-3">
               <label
-                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                class="block uppercase tracking-wide text-gray-700 font-bold mb-2"
                 for="grid-company-name"
               >
                 Company<span
@@ -166,7 +168,7 @@ const submitForm = (e: event) => {
               />
               <p
                 v-if="!data.form.company.length && data.submission"
-                class="text-red-500 text-xs italic"
+                class="text-[--primary-error-overlay]"
               >
                 Please fill out this field.
               </p>
@@ -174,7 +176,7 @@ const submitForm = (e: event) => {
 
             <div class="w-full md:w-full mb-6 px-3">
               <label
-                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                class="block uppercase tracking-wide text-gray-700 font-bold mb-2"
                 for="grid-email"
               >
                 Email<span
@@ -198,7 +200,7 @@ const submitForm = (e: event) => {
               />
               <p
                 v-if="!data.form.email.length && data.submission"
-                class="text-red-500 text-xs italic"
+                class="text-[--primary-error-overlay]"
               >
                 Please enter a valid email.
               </p>
@@ -206,7 +208,7 @@ const submitForm = (e: event) => {
 
             <div class="w-full md:w-full px-3 mb-6">
               <label
-                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                class="block uppercase tracking-wide text-gray-700 font-bold mb-2"
                 for="grid-message"
               >
                 Message<span
@@ -229,7 +231,7 @@ const submitForm = (e: event) => {
               />
               <p
                 v-if="!data.form.message.length && data.submission"
-                class="text-red-500 text-xs italic"
+                class="text-[--primary-error-overlay]"
               >
                 Please fill out this field.
               </p>
