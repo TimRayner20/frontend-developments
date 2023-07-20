@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="social-links w-1/4 px-2">
+  <div
+    class="social-links w-1/4 px-2 items-center text-center py-6 mx-auto md:text-left md:mx-0"
+  >
     <ul class="flex justify-between align-middle m-auto">
       <li id="facebook">
         <a href="#!" class="mr-6 dark:text-neutral-200">

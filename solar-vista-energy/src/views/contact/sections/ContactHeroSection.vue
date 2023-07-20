@@ -54,18 +54,20 @@ const submitForm = (e: event) => {
 
 <template>
   <div
-    class="hero-container min-h-screen h-full md:flex-row m-auto flex flex-row p-5 md:pl-0 pr-0"
+    class="hero-container min-h-screen h-full m-auto flex flex-col md:flex-row p-5 md:pl-0 pr-0"
   >
     <div
       class="content-wrapper w-full md:w-1/2 h-full items-center content-center align-middle m-auto"
     >
       <div class="content-overlay"></div>
-      <div class="content relative text-white w-fit m-auto">
-        <h1 class="text-4xl md:text-8xl my-5 p2 font-bold">
+      <div class="content relative text-white w-fit m-auto my-16 md:my-0">
+        <h1
+          class="text-4xl md:text-8xl my-5 p2 font-bold text-center md:text-left"
+        >
           Let's Work <strong>Together</strong>
         </h1>
         <h3 class="text-3xl md:px-2 p-2">Start your solar journey today</h3>
-        <p class="text-xs italic md:px-2">
+        <p class="text-xs hidden md:block italic md:px-2">
           Lets just pretend like these AI generated human faces aren't blank
         </p>
         <div class="contact-info mx-2">
@@ -101,7 +103,7 @@ const submitForm = (e: event) => {
             + 01 234 567 88
           </p>
         </div>
-        <div class="social-icons mt-4">
+        <div class="social-icons mt-4 mx-auto items-center">
           <SocialIconsSmall />
         </div>
       </div>
@@ -111,10 +113,7 @@ const submitForm = (e: event) => {
       class="form-wrapper w-full md:w-1/2 items-center content-center align-middle m-auto px-20"
     >
       <div class="form-overlay"></div>
-      c
-      <div
-        class="form w-full md:mt-[80px] mx-auto h-full relative w-fit m-auto"
-      >
+      <div class="form md:mt-[80px] mx-auto h-full relative w-fit m-auto">
         <form id="home-contact-form" class="w-3/4 lg:w-full m-auto">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -268,7 +267,7 @@ const submitForm = (e: event) => {
 }
 
 .content-overlay {
-  background-color: var(--primary-overlay);
+  background-color: var(--secondary-overlay);
   position: absolute;
   top: 0;
   left: 0;
@@ -277,6 +276,7 @@ const submitForm = (e: event) => {
   z-index: 1;
   @media (min-width: 640px) {
     width: 50%;
+    background-color: var(--primary-overlay);
   }
 }
 .content {
