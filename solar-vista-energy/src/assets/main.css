@@ -32,47 +32,50 @@ p {
 
 h1 {
   font-size: 4rem !important; /* 64px */
-  @media screen and (min-width: var(--mq-tablet)) {
+  color: red !important;
+  @media screen and (min-width: 768px) {
     font-size: 5rem !important; /* 80px */
+    color: orange !important;
   }
-  @media screen and (min-width: var(--mq-desktop)) {
+  @media screen and (min-width: 1024px) {
     font-size: 6rem !important; /* 96px */
+    color: green !important;
   }
 }
 h2 {
   font-size: 2.5rem;
-  @media screen and (min-width: var(--mq-tablet)) {
+  @media screen and (min-width: 768px) {
     font-size: 3rem;
   }
-  @media screen and (min-width: var(--mq-desktop)) {
+  @media screen and (min-width: 1024px) {
     font-size: 4rem;
   }
 }
 h3 {
   font-size: 2.5rem;
-  @media screen and (min-width: var(--mq-tablet)) {
+  @media screen and (min-width: 768px) {
     font-size: 3rem;
   }
-  @media screen and (min-width: var(--mq-desktop)) {
+  @media screen and (min-width: 1024px) {
     font-size: 4rem;
   }
 }
 h4 {
   font-size: 2.5rem;
-  @media screen and (min-width: var(--mq-tablet)) {
+  @media screen and (min-width: 768px) {
     font-size: 3rem;
   }
-  @media screen and (min-width: var(--mq-desktop)) {
+  @media screen and (min-width: 1024px) {
     font-size: 4rem;
   }
 }
 
 p {
   font-size: 1rem;
-  @media screen and (min-width: var(--mq-tablet)) {
+  @media screen and (min-width: 768px) {
     font-size: 1.25rem;
   }
-  @media screen and (min-width: var(--mq-desktop)) {
+  @media screen and (min-width: 1024px) {
     font-size: 1.5rem;
   }
 }
