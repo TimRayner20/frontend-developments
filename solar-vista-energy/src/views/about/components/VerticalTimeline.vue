@@ -54,6 +54,7 @@ const filteredTimelineItems = computed(() => {
   padding: 40px 0;
   width: 1000px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 .timeline:before {
   content: "";
@@ -123,6 +124,12 @@ const filteredTimelineItems = computed(() => {
   margin: 0;
   padding: 0;
   font-size: 14px;
+}
+
+.timeline ul li .time:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .timeline ul li:nth-child(odd) .time {
   position: absolute;
