@@ -32,14 +32,11 @@ p {
 
 h1 {
   font-size: 4rem !important; /* 64px */
-  color: red !important;
   @media screen and (min-width: 768px) {
     font-size: 5rem !important; /* 80px */
-    color: orange !important;
   }
   @media screen and (min-width: 1024px) {
     font-size: 6rem !important; /* 96px */
-    color: green !important;
   }
 }
 h2 {
