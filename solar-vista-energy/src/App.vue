@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { reactive, ref } from "vue";
+import { ref } from "vue";
 import Navbar from "@/components/navigation/Navbar.vue";
 import Footer from "@/components/navigation/Footer.vue";
 import "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js";
+
 import MobileNavigation from "./components/navigation/MobileNavigation.vue";
 
 const mobileNavOpen = ref(false);
