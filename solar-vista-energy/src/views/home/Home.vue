@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import {
-  companyBadges,
-  companyHighlights,
-} from "@/constants/home-constants.ts";
-
+import { companyBadges, companyHighlights } from "@/constants/home-constants";
 import Highlight from "./components/Highlight.vue";
 import HomeHero from "./sections/HomeHero.vue";
 import AboutSection from "./sections/AboutSection.vue";

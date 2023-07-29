@@ -205,9 +205,9 @@ const submitForm = (e: event) => {
       </form>
       <div class="m-auto hidden lg:flex lg:m-0 lg:ml-auto">
         <img
-          src="../../../assets/images/two-buildings.png"
+          src="../../../assets/images/panel-2.png"
           alt="Solar Solutions"
-          class="rounded-xl w-auto h-[85%] align-middle m-auto"
+          class="rounded-xl w-auto h-[65%] align-middle m-auto transform -scale-x-100 mt-0"
         />
       </div>
     </div>

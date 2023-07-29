@@ -28,7 +28,7 @@ const updateScroll = () => {
     :class="{ change_color: scrollPosition.valueOf() > 500 }"
   >
     <div class="container m-auto flex flex-row p-5 md:pl-0 pr-0">
-      <p class="text-3xl">🍃☀️</p>
+      <p class="text-3xl">🍃</p>
       <ul class="navigation ml-auto hidden md:block">
         <router-link class="navbar-link m-3 p-5 align-middle" to="/"
           >Home</router-link

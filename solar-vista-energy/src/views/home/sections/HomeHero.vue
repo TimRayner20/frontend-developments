@@ -2,33 +2,36 @@
 
 <template>
   <div
-    class="hero min-h-[45vh] flex flex-col -mt-20 relative text-center md:text-left"
+    class="hero flex flex-col -mt-20 relative text-center md:text-left min-h-[40vh] lg:mb-40"
   >
-    <!-- TODO: Change image for mobile-->
-    <img
-      id="bg-gradient-mobile"
-      src="@/assets/images/bg-gradient-mobile.svg"
-      class="bg-gradient absolute top-[-5px] left:0 w-full -z-10"
-    />
-    <img
-      id="bg-gradient-tablet"
-      src="@/assets/images/bg-gradient-tablet.svg"
-      class="bg-gradient absolute top-[-10vh] right-0 -z-10"
-    />
-    <img
-      id="bg-gradient-lg"
-      src="@/assets/images/bg-gradient.svg"
-      class="bg-gradient absolute top-[-40px] right-[-410px] w-[95%] -z-10"
-    />
+    <!-- TODO: clean up images -->
+    <div class="imgs">
+      <img
+        id="bg-gradient-mobile"
+        src="@/assets/images/bg-gradient-mobile.svg"
+        class="bg-gradient absolute top-[-5px] left:0 w-full -z-10"
+      />
+      <img
+        id="bg-gradient-tablet"
+        src="@/assets/images/bg-gradient-tablet.svg"
+        class="bg-gradient absolute top-[-10vh] right-0 -z-10"
+      />
+      <img
+        id="bg-gradient-lg"
+        src="@/assets/images/bg-gradient.svg"
+        class="bg-gradient absolute top-[-40px] right-[-410px] w-[95%] -z-10"
+      />
+    </div>
+
     <div
-      class="container flex hero-content align-middle md:align-top md:mt-32 md:m-[44px auto] flex flex-col md:flex-row w-full m-auto md:align-middle"
+      class="content container flex hero-content align-middle md:align-top md:mt-32 md:m-[44px auto] flex flex-col md:flex-row w-full m-auto md:align-middle"
     >
       <div
-        class="md:justify-start align-middlemd:mr-10 mt-28 md:mt-0 mb-16 md:mb-0 md:w-6/12 h-full flex flex-col justify-center m-auto"
+        class="md:justify-start align-middlemd:mr-10 mt-28 md:mt-0 mb-16 md:mb-0 md:w-6/12 h-full flex flex-col justify-center m-auto lg:align-middle lg:m-auto"
       >
         <h1 class="text-black my-5 font-bold">Solar Vista Energy</h1>
-        <p class="text-black mt-3">Making A Solar Difference ☀️</p>
-        <div class="buttons w-full md:w-2/3 m-auto md:m-0">
+        <h3 class="text-black my-5">Making A Solar Difference ☀️</h3>
+        <div class="buttons w-full m-auto md:m-0 px-16 md:px-0 lg:w-3/4">
           <button
             class="btn bg-[--primary] text-white rounded-md p-3 mt-6 w-full m-auto md:ml-0"
           >
@@ -50,9 +53,9 @@
       </div>
       <div class="flex flex-col md:w-6/12">
         <img
-          src="@/assets/images/building-1.png"
+          src="@/assets/images/panel-1.png"
           alt="hero-image"
-          class="w-[400px] md:w-[500px] rounded-xl m-auto md:m-0 md:ml-auto"
+          class="w-[400px] lg:w-[500px] rounded-xl m-auto md:ml-16 lg:ml-auto"
         />
       </div>
     </div>
