@@ -2,18 +2,16 @@
 
 <template>
   <!-- Footer container -->
-  <footer
-    class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"
-  >
+  <footer class="bg-[#2d4c6ae6] text-center text-[#c9d4cf] lg:text-left">
     <div
-      class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between"
+      class="flex items-center justify-center p-6 lg:justify-between bg-[#2d4c6a4d]"
     >
       <div class="mr-12 hidden lg:block">
         <span>Get connected with us on social networks:</span>
       </div>
       <!-- Social network icons container -->
       <div class="flex justify-center">
-        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <a href="#!" class="mr-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4"
@@ -25,7 +23,7 @@
             />
           </svg>
         </a>
-        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <a href="#!" class="mr-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4"
@@ -37,7 +35,7 @@
             />
           </svg>
         </a>
-        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <a href="#!" class="mr-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -51,7 +49,7 @@
             />
           </svg>
         </a>
-        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <a href="#!" class="mr-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4"
@@ -63,7 +61,7 @@
             />
           </svg>
         </a>
-        <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <a href="#!" class="mr-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4"
@@ -75,7 +73,7 @@
             />
           </svg>
         </a>
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200">
+        <a href="#!" class="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4"
@@ -98,72 +96,14 @@
           <h6
             class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="mr-3 h-4 w-4"
-            >
-              <path
-                d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"
-              />
-            </svg>
-            SOLAR VISTA ENERGY
+            🍃 Solar Vista Energy
           </h6>
-          <p>Making A Solar Difference ☀️</p>
+          <h6>Making A Solar Difference ☀️</h6>
         </div>
         <!-- Products section -->
-        <div class="">
-          <h6
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-          >
-            Products
-          </h6>
-          <p class="mb-4">
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              >Angular</a
-            >
-          </p>
-          <p class="mb-4">
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              >React</a
-            >
-          </p>
-          <p class="mb-4">
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              >Laravel</a
-            >
-          </p>
-        </div>
+        <div class=""></div>
         <!-- Useful links section -->
-        <div class="">
-          <h6
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-          >
-            Useful links
-          </h6>
-          <p class="mb-4">
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              >Pricing</a
-            >
-          </p>
-          <p class="mb-4">
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              >Settings</a
-            >
-          </p>
-          <p class="mb-4">
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              >Orders</a
-            >
-          </p>
-          <p>
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Help</a>
-          </p>
-        </div>
+        <div class=""></div>
         <!-- Contact section -->
         <div>
           <h6
@@ -238,10 +178,10 @@
     </div>
 
     <!--Copyright section-->
-    <div class="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
+    <div class="bg-[#2d4c6a4d] p-6 text-center">
       <span>© {{ new Date().getFullYear() }} Copyright </span>
       <a
-        class="font-semibold text-neutral-600 dark:text-neutral-400"
+        class="font-semibold dark:text-neutral-400"
         href="https://tailwind-elements.com/"
         >Solar Vista Energy</a
       >
