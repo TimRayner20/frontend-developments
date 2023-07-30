@@ -55,7 +55,7 @@
         <img
           src="@/assets/images/panel-1.png"
           alt="hero-image"
-          class="w-[400px] lg:w-[500px] rounded-xl m-auto md:ml-16 lg:ml-auto"
+          class="w-[400px] lg:w-[350px] rounded-xl m-auto md:ml-16 lg:ml-auto"
         />
       </div>
     </div>

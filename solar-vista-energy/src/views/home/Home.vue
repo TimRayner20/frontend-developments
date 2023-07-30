@@ -86,6 +86,6 @@ const data = reactive({
     </div>
   </div>
 
-  <!-- CONACT SECTION-->
+  <!-- CONTACT SECTION-->
   <ContactSection />
 </template>

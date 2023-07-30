@@ -52,8 +52,8 @@ const submitForm = (e: event) => {
 </script>
 
 <template>
-  <div class="contact-section container m-auto my-20">
-    <div class="text-center lg:text-left lg:w-1/2 my-16">
+  <div class="contact-section container m-auto my-20 mb-0">
+    <div class="text-center lg:text-left lg:w-1/2 my-16 mb-0">
       <h3 class="text-center lg:text-left my-5 font-bold">Contact</h3>
       <p class="text-lg mt-6 my-5 text-center lg:text-left">
         Want to get in touch? We'd love to hear from you! You can reach us by
@@ -65,7 +65,7 @@ const submitForm = (e: event) => {
     <div class="flex flex-row">
       <form
         id="home-contact-form"
-        class="container w-3/4 lg:w-full m-auto lg:m-0 max-w-lg"
+        class="container w-3/4 lg:w-full m-auto lg:m-0 max-w-lg h-fit"
       >
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -203,11 +203,11 @@ const submitForm = (e: event) => {
           </div>
         </div>
       </form>
-      <div class="m-auto hidden lg:flex lg:m-0 lg:ml-auto">
+      <div class="h-[55vh] pb-32 pl-32 ml-72">
         <img
           src="../../../assets/images/panel-2.png"
           alt="Solar Solutions"
-          class="rounded-xl w-auto h-[65%] align-middle m-auto transform -scale-x-100 mt-0"
+          class="align-middle m-auto transform -scale-x-100 mt-0 h-full"
         />
       </div>
     </div>
