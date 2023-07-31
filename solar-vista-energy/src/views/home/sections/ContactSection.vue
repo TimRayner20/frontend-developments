@@ -65,7 +65,7 @@ const submitForm = (e: event) => {
     <div class="flex flex-col md:flex-row">
       <form
         id="home-contact-form"
-        class="container w-3/4 lg:w-full m-auto lg:m-0 max-w-lg h-fit"
+        class="container w-3/4 lg:w-full m-auto lg:m-0 max-w-lg h-fit my-5"
       >
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">

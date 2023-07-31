@@ -66,12 +66,12 @@ const submitForm = (e: event) => {
         >
           Let's Work <strong>Together</strong>
         </h1>
-        <h3 class="text-3xl md:px-2 p-2">Start your solar journey today</h3>
-        <p class="text-xs hidden md:block italic md:px-2">
+        <h3 class="text-3xl p-2">Start your solar journey today</h3>
+        <p class="text-xs hidden md:block italic">
           Lets just pretend like these AI generated human faces aren't blank
         </p>
-        <div class="contact-info mx-2">
-          <p class="mb-4 flex items-center justify-center md:justify-start">
+        <div class="contact-info">
+          <p class="my-4 flex items-center justify-center md:justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

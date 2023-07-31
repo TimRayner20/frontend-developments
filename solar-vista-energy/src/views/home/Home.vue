@@ -24,8 +24,8 @@ const data = reactive({
     class="container m-auto my-16 mb-5 md:my-16 text-center"
     id="introduction"
   >
-    <h3 class="my-5 md:px-2 font-bold">Powering A Brighter Future</h3>
-    <h4 class="md:px-2">Market leading Solar Solutions Since 1999</h4>
+    <h3 class="my-6 md:px-2 font-bold">Powering A Brighter Future</h3>
+    <h4 class="md:px-2 my-2">Market leading Solar Solutions Since 1999</h4>
   </div>
 
   <!--HIGHLIGHTS-->

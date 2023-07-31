@@ -2,7 +2,7 @@
 
 <template>
   <div class="container flex flex-col md:flex-row justify-between m-auto">
-    <div class="header-content md:w-1/2">
+    <div class="header-content md:w-1/2 m-auto align-middle">
       <h3 class="text-center lg:text-left my-5 lg:px-2 font-bold">
         Europes number one solar solution.
       </h3>
