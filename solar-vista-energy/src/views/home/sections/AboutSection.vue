@@ -14,7 +14,7 @@
         <h3 class="text-4xl text-center lg:text-left font-bold">
           About Solar Vista
         </h3>
-        <p class="my-5">
+        <p class="my-2">
           Hi 👋, we're Solar Vista! We're on a mission to help like minded
           businesses reach net zero before 2050 by offering bespoke solar
           solutions. We're a team of passionate individuals who are committed to
@@ -22,7 +22,7 @@
         </p>
         <a
           href="/about"
-          class="btn block bg-[--primary] text-white rounded-lg p-3 w-2/3 mb-6 m-auto lg:m-0 lg:w-4/12 text-center"
+          class="btn block bg-[--primary] text-white rounded-lg p-3 w-2/3 mb-6 m-auto lg:m-0 lg:w-4/12 text-center my-3"
         >
           Read more
         </a>

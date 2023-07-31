@@ -48,10 +48,10 @@ const projects: Array<any> = [
     <h3 class="text-center lg:text-left my-5 lg:px-2 font-bold">
       Proud Projects
     </h3>
-    <h4 class="px-2 mb-8 text-center lg:text-left">
+    <p class="px-2 mb-8 text-center lg:text-left">
       Just a few notable names we've worked with, to help the world be a better
       place, and give our next generaton a brighter future.
-    </h4>
+    </p>
     <div class="projects grid place-items-center relative lg:min-h-[50vh] my-6">
       <div class="slider m-auto w-[90%] lg:w-full lg:overflow-hidden lg:py-5">
         <div class="slide-track flex">

@@ -48,10 +48,10 @@ const data = reactive({
   <ProjectSection />
   <!-- Partners-->
   <div class="container m-auto my-8 mt-16 text-center md:mt-0" id="partners">
-    <h4 class="px-2">
+    <p class="px-2">
       Just a few notable names we've worked with, to help the world be a better
       place, and give our next generaton a brighter future.
-    </h4>
+    </p>
   </div>
   <div
     id="partner-badges"
