@@ -8,18 +8,18 @@
     <div class="imgs">
       <img
         id="bg-gradient-mobile"
-        src="@/assets/images/bg-gradient-mobile.svg"
-        class="bg-gradient absolute top-[-5px] left:0 w-full -z-10"
+        src="@/assets/images/bg-gradient-tablet.svg"
+        class="bg-gradient absolute top-0 left:0 w-full -z-10"
       />
       <img
         id="bg-gradient-tablet"
         src="@/assets/images/bg-gradient-tablet.svg"
-        class="bg-gradient absolute top-[-10vh] right-0 -z-10"
+        class="bg-gradient absolute top-[-10vh] right-0 left-0 w-full -z-10"
       />
       <img
         id="bg-gradient-lg"
         src="@/assets/images/bg-gradient.svg"
-        class="bg-gradient absolute top-[-40px] right-[-410px] w-[95%] -z-10"
+        class="bg-gradient absolute top-[-340px] right-[-410px] w-[95%] -z-10"
       />
     </div>
 

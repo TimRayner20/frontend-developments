@@ -62,7 +62,7 @@ const submitForm = (e: event) => {
       </p>
     </div>
 
-    <div class="flex flex-row">
+    <div class="flex flex-col md:flex-row">
       <form
         id="home-contact-form"
         class="container w-3/4 lg:w-full m-auto lg:m-0 max-w-lg h-fit"
@@ -203,7 +203,7 @@ const submitForm = (e: event) => {
           </div>
         </div>
       </form>
-      <div class="h-[55vh] pb-32 pl-32 ml-72">
+      <div class="h-[45vh] md:h-[55vh] pb-32 md:pl-32 w-full">
         <img
           src="../../../assets/images/panel-2.png"
           alt="Solar Solutions"
